@@ -1,0 +1,221 @@
+2021-07-15 09:09:13.559 [Error] 向一个无法连接的网络尝试了一个套接字操作。 169.254.251.173:5000
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at FS.Monitor.Common.Scoket.SocketClientHelper.ConnectServer() in D:\vsCode\FS.Monitor\FS.Monitor\Common\Scoket\SocketClientHelper.cs:line 124
+2021-07-15 09:09:16.566 [Error] 向一个无法连接的网络尝试了一个套接字操作。 169.254.251.173:5000
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at FS.Monitor.Common.Scoket.SocketClientHelper.ConnectServer() in D:\vsCode\FS.Monitor\FS.Monitor\Common\Scoket\SocketClientHelper.cs:line 124
+2021-07-15 09:09:19.574 [Error] 向一个无法连接的网络尝试了一个套接字操作。 169.254.251.173:5000
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at FS.Monitor.Common.Scoket.SocketClientHelper.ConnectServer() in D:\vsCode\FS.Monitor\FS.Monitor\Common\Scoket\SocketClientHelper.cs:line 124
+2021-07-15 09:19:24.240 [Error] Object reference not set to an instance of an object.
+   at FS.Monitor.Common.Scoket.SocketClientHelper.ReleaseServerSocket() in D:\vsCode\FS.Monitor\FS.Monitor\Common\Scoket\SocketClientHelper.cs:line 226
+   at FS.Monitor.Common.Scoket.SocketClientHelper.CheckServer(Object sender, ElapsedEventArgs e) in D:\vsCode\FS.Monitor\FS.Monitor\Common\Scoket\SocketClientHelper.cs:line 188
+2021-07-15 09:21:31.613 [Error] 由于目标计算机积极拒绝，无法连接。 169.254.251.173:5000
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at FS.Monitor.Common.Scoket.SocketClientHelper.ConnectServer() in D:\vsCode\FS.Monitor\FS.Monitor\Common\Scoket\SocketClientHelper.cs:line 124
+2021-07-15 09:34:14.419 [Error] 向一个无法连接的网络尝试了一个套接字操作。 169.254.251.173:5000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 FS.Monitor.Common.Scoket.SocketClientHelper.ConnectServer() 位置 D:\vsCode\FS.Monitor\FS.Monitor\Common\Scoket\SocketClientHelper.cs:行号 124
+2021-07-15 10:04:16.014 [Error] 向服务器发送心跳包出错：索引超出了数组界限。
+2021-07-15 10:04:28.055 [Error] 未将对象引用设置到对象的实例。
+   在 FS.Monitor.Common.Scoket.SocketClientHelper.ReleaseServerSocket() 位置 D:\vsCode\FS.Monitor\FS.Monitor\Common\Scoket\SocketClientHelper.cs:行号 226
+   在 FS.Monitor.Common.Scoket.SocketClientHelper.CheckServer(Object sender, ElapsedEventArgs e) 位置 D:\vsCode\FS.Monitor\FS.Monitor\Common\Scoket\SocketClientHelper.cs:行号 188
+2021-07-15 10:04:28.062 [Error] 向服务器发送心跳包出错：索引超出了数组界限。
+2021-07-15 10:04:38.071 [Error] 向服务器发送心跳包出错：索引超出了数组界限。
+2021-07-15 10:04:57.645 [Error] 向服务器发送心跳包出错：索引超出了数组界限。
+2021-07-15 10:05:07.655 [Error] 向服务器发送心跳包出错：索引超出了数组界限。
+2021-07-15 10:06:43.308 [Error] 向服务器发送心跳包出错：索引超出了数组界限。
+2021-07-15 10:06:59.132 [Error] 向服务器发送心跳包出错：索引超出了数组界限。
+2021-07-15 10:07:09.143 [Error] 向服务器发送心跳包出错：索引超出了数组界限。
+2021-07-15 10:09:22.517 [Error] 向服务器发送心跳包出错：远程主机强迫关闭了一个现有的连接。
+2021-07-15 10:09:42.535 [Error] 向服务器发送心跳包出错：无法访问已释放的对象。
+对象名:“System.Net.Sockets.Socket”。
+2021-07-15 10:12:28.614 [Error] 向服务器发送心跳包出错：无法访问已释放的对象。
+对象名:“System.Net.Sockets.Socket”。
+2021-07-15 10:12:48.630 [Error] 向服务器发送心跳包出错：无法访问已释放的对象。
+对象名:“System.Net.Sockets.Socket”。
+2021-07-15 10:13:58.659 [Error] 向服务器发送心跳包出错：无法访问已释放的对象。
+对象名:“System.Net.Sockets.Socket”。
+2021-07-15 10:22:55.025 [Error] 向服务器发送心跳包出错：无法访问已释放的对象。
+对象名:“System.Net.Sockets.Socket”。
+2021-07-15 10:23:07.010 [Error] 向服务器发送心跳包出错：无法访问已释放的对象。
+对象名:“System.Net.Sockets.Socket”。
+2021-07-15 10:23:09.891 [Error] 未将对象引用设置到对象的实例。
+   在 FS.Monitor.Common.Scoket.SocketClientHelper.ReleaseServerSocket() 位置 D:\vsCode\FS.Monitor\FS.Monitor\Common\Scoket\SocketClientHelper.cs:行号 226
+   在 FS.Monitor.Common.Scoket.SocketClientHelper.CheckServer(Object sender, ElapsedEventArgs e) 位置 D:\vsCode\FS.Monitor\FS.Monitor\Common\Scoket\SocketClientHelper.cs:行号 188
+2021-07-15 10:23:47.033 [Error] 向服务器发送心跳包出错：无法访问已释放的对象。
+对象名:“System.Net.Sockets.Socket”。
+2021-07-15 10:24:17.051 [Error] 向服务器发送心跳包出错：无法访问已释放的对象。
+对象名:“System.Net.Sockets.Socket”。
+2021-07-15 10:24:30.193 [Error] 向服务器发送心跳包出错：无法访问已释放的对象。
+对象名:“System.Net.Sockets.Socket”。
+2021-07-15 10:26:06.934 [Error] 向服务器发送心跳包出错：无法访问已释放的对象。
+对象名:“System.Net.Sockets.Socket”。
+2021-07-15 10:26:41.954 [Error] 向服务器发送心跳包出错：无法访问已释放的对象。
+对象名:“System.Net.Sockets.Socket”。
+2021-07-15 10:27:01.981 [Error] 向服务器发送心跳包出错：无法访问已释放的对象。
+对象名:“System.Net.Sockets.Socket”。
+2021-07-15 10:27:37.018 [Error] 向服务器发送心跳包出错：无法访问已释放的对象。
+对象名:“System.Net.Sockets.Socket”。
+2021-07-15 10:27:47.756 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-15 10:28:12.067 [Error] 向服务器发送心跳包出错：无法访问已释放的对象。
+对象名:“System.Net.Sockets.Socket”。
+2021-07-15 10:28:32.094 [Error] 向服务器发送心跳包出错：无法访问已释放的对象。
+对象名:“System.Net.Sockets.Socket”。
+2021-07-15 10:29:04.294 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-15 10:29:07.127 [Error] 向服务器发送心跳包出错：无法访问已释放的对象。
+对象名:“System.Net.Sockets.Socket”。
+2021-07-15 10:29:12.134 [Error] 向服务器发送心跳包出错：无法访问已释放的对象。
+对象名:“System.Net.Sockets.Socket”。
+2021-07-15 10:29:17.142 [Error] 向服务器发送心跳包出错：无法访问已释放的对象。
+对象名:“System.Net.Sockets.Socket”。
+2021-07-15 10:29:22.158 [Error] 向服务器发送心跳包出错：无法访问已释放的对象。
+对象名:“System.Net.Sockets.Socket”。
+2021-07-15 10:30:02.419 [Error] 向服务器发送心跳包出错：无法访问已释放的对象。
+对象名:“System.Net.Sockets.Socket”。
+2021-07-15 10:30:37.468 [Error] 向服务器发送心跳包出错：无法访问已释放的对象。
+对象名:“System.Net.Sockets.Socket”。
+2021-07-15 10:30:47.476 [Error] 向服务器发送心跳包出错：无法访问已释放的对象。
+对象名:“System.Net.Sockets.Socket”。
+2021-07-15 10:30:52.484 [Error] 向服务器发送心跳包出错：无法访问已释放的对象。
+对象名:“System.Net.Sockets.Socket”。
+2021-07-15 10:34:39.166 [Error] 向服务器发送心跳包出错：无法访问已释放的对象。
+对象名:“System.Net.Sockets.Socket”。
+2021-07-15 10:34:42.169 [Error] 由于目标计算机积极拒绝，无法连接。 192.168.100.181:5000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 FS.Monitor.Common.Scoket.SocketClientHelper.ConnectServer() 位置 D:\vsCode\FS.Monitor\FS.Monitor\Common\Scoket\SocketClientHelper.cs:行号 124
+2021-07-15 10:34:44.175 [Error] 向服务器发送心跳包出错：由于套接字没有连接并且(当使用一个 sendto 调用发送数据报套接字时)没有提供地址，发送或接收数据的请求没有被接受。
+2021-07-15 10:34:46.180 [Error] 由于目标计算机积极拒绝，无法连接。 192.168.100.181:5000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 FS.Monitor.Common.Scoket.SocketClientHelper.ConnectServer() 位置 D:\vsCode\FS.Monitor\FS.Monitor\Common\Scoket\SocketClientHelper.cs:行号 124
+2021-07-15 10:34:49.182 [Error] 向服务器发送心跳包出错：由于套接字没有连接并且(当使用一个 sendto 调用发送数据报套接字时)没有提供地址，发送或接收数据的请求没有被接受。
+2021-07-15 10:34:50.191 [Error] 由于目标计算机积极拒绝，无法连接。 192.168.100.181:5000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 FS.Monitor.Common.Scoket.SocketClientHelper.ConnectServer() 位置 D:\vsCode\FS.Monitor\FS.Monitor\Common\Scoket\SocketClientHelper.cs:行号 124
+2021-07-15 10:34:54.189 [Error] 向服务器发送心跳包出错：由于套接字没有连接并且(当使用一个 sendto 调用发送数据报套接字时)没有提供地址，发送或接收数据的请求没有被接受。
+2021-07-15 10:34:54.199 [Error] 由于目标计算机积极拒绝，无法连接。 192.168.100.181:5000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 FS.Monitor.Common.Scoket.SocketClientHelper.ConnectServer() 位置 D:\vsCode\FS.Monitor\FS.Monitor\Common\Scoket\SocketClientHelper.cs:行号 124
+2021-07-15 10:34:58.208 [Error] 由于目标计算机积极拒绝，无法连接。 192.168.100.181:5000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 FS.Monitor.Common.Scoket.SocketClientHelper.ConnectServer() 位置 D:\vsCode\FS.Monitor\FS.Monitor\Common\Scoket\SocketClientHelper.cs:行号 124
+2021-07-15 10:34:59.204 [Error] 向服务器发送心跳包出错：由于套接字没有连接并且(当使用一个 sendto 调用发送数据报套接字时)没有提供地址，发送或接收数据的请求没有被接受。
+2021-07-15 10:35:02.217 [Error] 由于目标计算机积极拒绝，无法连接。 192.168.100.181:5000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 FS.Monitor.Common.Scoket.SocketClientHelper.ConnectServer() 位置 D:\vsCode\FS.Monitor\FS.Monitor\Common\Scoket\SocketClientHelper.cs:行号 124
+2021-07-15 10:35:04.211 [Error] 向服务器发送心跳包出错：由于套接字没有连接并且(当使用一个 sendto 调用发送数据报套接字时)没有提供地址，发送或接收数据的请求没有被接受。
+2021-07-15 10:35:06.227 [Error] 由于目标计算机积极拒绝，无法连接。 192.168.100.181:5000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 FS.Monitor.Common.Scoket.SocketClientHelper.ConnectServer() 位置 D:\vsCode\FS.Monitor\FS.Monitor\Common\Scoket\SocketClientHelper.cs:行号 124
+2021-07-15 10:35:21.262 [Error] 由于目标计算机积极拒绝，无法连接。 192.168.100.181:5000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 FS.Monitor.Common.Scoket.SocketClientHelper.ConnectServer() 位置 D:\vsCode\FS.Monitor\FS.Monitor\Common\Scoket\SocketClientHelper.cs:行号 124
+2021-07-15 10:35:32.061 [Error] 向服务器发送心跳包出错：无法访问已释放的对象。
+对象名:“System.Net.Sockets.Socket”。
+2021-07-15 10:35:32.068 [Error] 由于目标计算机积极拒绝，无法连接。 192.168.100.181:5000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 FS.Monitor.Common.Scoket.SocketClientHelper.ConnectServer() 位置 D:\vsCode\FS.Monitor\FS.Monitor\Common\Scoket\SocketClientHelper.cs:行号 124
+2021-07-15 10:35:36.077 [Error] 由于目标计算机积极拒绝，无法连接。 192.168.100.181:5000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 FS.Monitor.Common.Scoket.SocketClientHelper.ConnectServer() 位置 D:\vsCode\FS.Monitor\FS.Monitor\Common\Scoket\SocketClientHelper.cs:行号 124
+2021-07-15 10:35:41.797 [Error] 由于目标计算机积极拒绝，无法连接。 192.168.100.181:5000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 FS.Monitor.Common.Scoket.SocketClientHelper.ConnectServer() 位置 D:\vsCode\FS.Monitor\FS.Monitor\Common\Scoket\SocketClientHelper.cs:行号 124
+2021-07-15 10:36:38.348 [Error] 连接服务器失败：指定了无效的 IP 地址。
+   在 System.Net.IPAddress.InternalParse(String ipString, Boolean tryParse)
+   在 System.Net.IPAddress.Parse(String ipString)
+   在 FS.Monitor.Common.Scoket.SocketClientHelper.ConnectServer() 位置 D:\vsCode\FS.Monitor\FS.Monitor\Common\Scoket\SocketClientHelper.cs:行号 114
+2021-07-15 10:37:01.264 [Error] 连接服务器失败：指定了无效的 IP 地址。
+   在 System.Net.IPAddress.InternalParse(String ipString, Boolean tryParse)
+   在 System.Net.IPAddress.Parse(String ipString)
+   在 FS.Monitor.Common.Scoket.SocketClientHelper.ConnectServer() 位置 D:\vsCode\FS.Monitor\FS.Monitor\Common\Scoket\SocketClientHelper.cs:行号 114
+2021-07-15 10:38:29.035 [Error] 向服务器发送心跳包出错：无法访问已释放的对象。
+对象名:“System.Net.Sockets.Socket”。
+2021-07-15 10:53:40.682 [Error] 向服务器发送心跳包出错：无法访问已释放的对象。
+对象名:“System.Net.Sockets.Socket”。
+2021-07-15 10:53:52.156 [Error] 向服务器发送心跳包出错：无法访问已释放的对象。
+对象名:“System.Net.Sockets.Socket”。
+2021-07-15 10:53:52.157 [Error] 未将对象引用设置到对象的实例。
+   在 FS.Monitor.Common.Scoket.SocketClientHelper.ReleaseServerSocket() 位置 D:\vsCode\FS.Monitor\FS.Monitor\Common\Scoket\SocketClientHelper.cs:行号 226
+   在 FS.Monitor.Common.Scoket.SocketClientHelper.CheckServer(Object sender, ElapsedEventArgs e) 位置 D:\vsCode\FS.Monitor\FS.Monitor\Common\Scoket\SocketClientHelper.cs:行号 188
+2021-07-15 10:54:12.171 [Error] 向服务器发送心跳包出错：无法访问已释放的对象。
+对象名:“System.Net.Sockets.Socket”。
+2021-07-15 10:54:13.210 [Error] 向一个无法连接的网络尝试了一个套接字操作。 169.254.251.173:5000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 FS.Monitor.Common.Scoket.SocketClientHelper.ConnectServer() 位置 D:\vsCode\FS.Monitor\FS.Monitor\Common\Scoket\SocketClientHelper.cs:行号 124
+2021-07-15 10:54:16.217 [Error] 向一个无法连接的网络尝试了一个套接字操作。 169.254.251.173:5000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 FS.Monitor.Common.Scoket.SocketClientHelper.ConnectServer() 位置 D:\vsCode\FS.Monitor\FS.Monitor\Common\Scoket\SocketClientHelper.cs:行号 124
+2021-07-15 10:54:17.178 [Error] 向服务器发送心跳包出错：由于套接字没有连接并且(当使用一个 sendto 调用发送数据报套接字时)没有提供地址，发送或接收数据的请求没有被接受。
+2021-07-15 10:54:19.224 [Error] 向一个无法连接的网络尝试了一个套接字操作。 169.254.251.173:5000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 FS.Monitor.Common.Scoket.SocketClientHelper.ConnectServer() 位置 D:\vsCode\FS.Monitor\FS.Monitor\Common\Scoket\SocketClientHelper.cs:行号 124
+2021-07-15 10:54:22.186 [Error] 向服务器发送心跳包出错：由于套接字没有连接并且(当使用一个 sendto 调用发送数据报套接字时)没有提供地址，发送或接收数据的请求没有被接受。
+2021-07-15 10:54:57.219 [Error] 向服务器发送心跳包出错：无法访问已释放的对象。
+对象名:“System.Net.Sockets.Socket”。
+2021-07-15 10:55:32.252 [Error] 向服务器发送心跳包出错：无法访问已释放的对象。
+对象名:“System.Net.Sockets.Socket”。
+2021-07-15 10:55:52.284 [Error] 向服务器发送心跳包出错：无法访问已释放的对象。
+对象名:“System.Net.Sockets.Socket”。
+2021-07-15 10:56:27.316 [Error] 向服务器发送心跳包出错：无法访问已释放的对象。
+对象名:“System.Net.Sockets.Socket”。
+2021-07-15 10:57:02.361 [Error] 向服务器发送心跳包出错：无法访问已释放的对象。
+对象名:“System.Net.Sockets.Socket”。
+2021-07-15 10:57:38.709 [Error] 向服务器发送心跳包出错：无法访问已释放的对象。
+对象名:“System.Net.Sockets.Socket”。
+2021-07-15 10:57:58.732 [Error] 向服务器发送心跳包出错：无法访问已释放的对象。
+对象名:“System.Net.Sockets.Socket”。
+2021-07-15 14:26:21.202 [Error] 由于目标计算机积极拒绝，无法连接。 192.168.100.181:5000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 FS.Monitor.Common.Scoket.SocketClientHelper.ConnectServer() 位置 D:\vsCode\FS.Monitor\FS.Monitor\Common\Scoket\SocketClientHelper.cs:行号 123
+2021-07-15 14:26:26.342 [Error] 向服务器发送心跳包出错：由于套接字没有连接并且(当使用一个 sendto 调用发送数据报套接字时)没有提供地址，发送或接收数据的请求没有被接受。
+2021-07-15 14:26:31.360 [Error] 向服务器发送心跳包出错：由于套接字没有连接并且(当使用一个 sendto 调用发送数据报套接字时)没有提供地址，发送或接收数据的请求没有被接受。
+2021-07-15 14:26:36.368 [Error] 向服务器发送心跳包出错：由于套接字没有连接并且(当使用一个 sendto 调用发送数据报套接字时)没有提供地址，发送或接收数据的请求没有被接受。
+2021-07-15 14:26:41.376 [Error] 向服务器发送心跳包出错：由于套接字没有连接并且(当使用一个 sendto 调用发送数据报套接字时)没有提供地址，发送或接收数据的请求没有被接受。
+2021-07-15 14:26:46.384 [Error] 向服务器发送心跳包出错：由于套接字没有连接并且(当使用一个 sendto 调用发送数据报套接字时)没有提供地址，发送或接收数据的请求没有被接受。
+2021-07-15 14:27:33.429 [Error] 由于目标计算机积极拒绝，无法连接。 192.168.100.181:5000
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 FS.Monitor.Common.Scoket.SocketClientHelper.ConnectServer() 位置 D:\vsCode\FS.Monitor\FS.Monitor\Common\Scoket\SocketClientHelper.cs:行号 123
+2021-07-15 14:27:38.441 [Error] 向服务器发送心跳包出错：由于套接字没有连接并且(当使用一个 sendto 调用发送数据报套接字时)没有提供地址，发送或接收数据的请求没有被接受。
+2021-07-15 14:27:43.460 [Error] 向服务器发送心跳包出错：由于套接字没有连接并且(当使用一个 sendto 调用发送数据报套接字时)没有提供地址，发送或接收数据的请求没有被接受。
+2021-07-15 14:27:48.469 [Error] 向服务器发送心跳包出错：由于套接字没有连接并且(当使用一个 sendto 调用发送数据报套接字时)没有提供地址，发送或接收数据的请求没有被接受。
+2021-07-15 14:27:53.479 [Error] 向服务器发送心跳包出错：由于套接字没有连接并且(当使用一个 sendto 调用发送数据报套接字时)没有提供地址，发送或接收数据的请求没有被接受。
+2021-07-15 14:27:58.488 [Error] 向服务器发送心跳包出错：由于套接字没有连接并且(当使用一个 sendto 调用发送数据报套接字时)没有提供地址，发送或接收数据的请求没有被接受。
+2021-07-15 14:28:03.496 [Error] 向服务器发送心跳包出错：由于套接字没有连接并且(当使用一个 sendto 调用发送数据报套接字时)没有提供地址，发送或接收数据的请求没有被接受。
+2021-07-15 14:28:08.502 [Error] 向服务器发送心跳包出错：由于套接字没有连接并且(当使用一个 sendto 调用发送数据报套接字时)没有提供地址，发送或接收数据的请求没有被接受。
+2021-07-15 14:28:13.512 [Error] 向服务器发送心跳包出错：由于套接字没有连接并且(当使用一个 sendto 调用发送数据报套接字时)没有提供地址，发送或接收数据的请求没有被接受。
+2021-07-15 14:28:18.522 [Error] 向服务器发送心跳包出错：由于套接字没有连接并且(当使用一个 sendto 调用发送数据报套接字时)没有提供地址，发送或接收数据的请求没有被接受。
+2021-07-15 14:28:23.531 [Error] 向服务器发送心跳包出错：由于套接字没有连接并且(当使用一个 sendto 调用发送数据报套接字时)没有提供地址，发送或接收数据的请求没有被接受。
+2021-07-15 14:28:28.540 [Error] 向服务器发送心跳包出错：由于套接字没有连接并且(当使用一个 sendto 调用发送数据报套接字时)没有提供地址，发送或接收数据的请求没有被接受。
+2021-07-15 14:28:33.560 [Error] 向服务器发送心跳包出错：由于套接字没有连接并且(当使用一个 sendto 调用发送数据报套接字时)没有提供地址，发送或接收数据的请求没有被接受。
+2021-07-15 14:28:38.567 [Error] 向服务器发送心跳包出错：由于套接字没有连接并且(当使用一个 sendto 调用发送数据报套接字时)没有提供地址，发送或接收数据的请求没有被接受。
+2021-07-15 17:10:17.723 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-15 17:10:21.373 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-15 17:10:26.373 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-15 17:10:31.375 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-15 17:10:36.376 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-15 17:10:59.670 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-15 17:11:12.209 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-15 17:11:40.663 [Error] 向服务器发送心跳包出错：无法访问已释放的对象。
+对象名:“System.Net.Sockets.Socket”。

@@ -1,0 +1,74 @@
+﻿<UserControl
+    x:Class="FS.Monitor.Views.DelItemTips"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:lang="clr-namespace:FS.Monitor.Common.Language"
+    xmlns:local="clr-namespace:FS.Monitor.Views"
+    xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    d:DesignHeight="385"
+    d:DesignWidth="524"
+    Background="#FF0B0D11"
+    mc:Ignorable="d">
+    <Grid>
+        <Border
+            Width="500"
+            Height="380"
+            Margin="20,5,0,0"
+            HorizontalAlignment="Left"
+            Background="#FF012B34"
+            BorderBrush="LightGray"
+            BorderThickness="1"
+            CornerRadius="10">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <TextBlock
+                    Grid.Row="1"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Bottom"
+                    FontFamily="微软雅黑"
+                    FontSize="30"
+                    Foreground="White"
+                    Text="{Binding delProject, Source={x:Static lang:LangProvider.Instance}}" />
+                <StackPanel
+                    Grid.Row="3"
+                    Margin="30,0"
+                    HorizontalAlignment="Left"
+                    Orientation="Horizontal">
+                    <Button
+                        Width="200"
+                        Height="45"
+                        materialDesign:ButtonAssist.CornerRadius="5"
+                        Background="#FF4ABAD0"
+                        BorderBrush="Transparent"
+                        Style="{StaticResource MaterialDesignRaisedButton}"
+                        ToolTip="{Binding Confirm, Source={x:Static lang:LangProvider.Instance}}">
+                        <TextBlock FontSize="20" Text="{Binding Confirm, Source={x:Static lang:LangProvider.Instance}}" />
+                    </Button>
+                    <Button
+                        Width="200"
+                        Height="45"
+                        Margin="20,0"
+                        materialDesign:ButtonAssist.CornerRadius="5"
+                        Background="#FFF2F2F2"
+                        BorderBrush="Transparent"
+                        Command="{x:Static materialDesign:DialogHost.CloseDialogCommand}"
+                        Style="{StaticResource MaterialDesignRaisedButton}"
+                        ToolTip="{Binding Cancel, Source={x:Static lang:LangProvider.Instance}}">
+                        <TextBlock
+                            FontSize="20"
+                            Foreground="Black"
+                            Text="{Binding Cancel, Source={x:Static lang:LangProvider.Instance}}" />
+                    </Button>
+                </StackPanel>
+            </Grid>
+        </Border>
+    </Grid>
+</UserControl>

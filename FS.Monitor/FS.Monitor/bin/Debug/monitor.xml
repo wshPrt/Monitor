@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<MonitorManage>
+  <Node Id="1809803568" />
+  <Node ProjectName="A煤矿" />
+  <Node LineNumber="1号线路" />
+  <Node NotEnable="True" />
+  <Node StartTime="2021/七月/星期一" />
+  <Node Id="1859114957" />
+  <Node ProjectName="B煤矿" />
+  <Node LineNumber="1号线路" />
+  <Node NotEnable="False" />
+  <Node StartTime="2021/七月/星期一" />
+  <Node Id="607807685" />
+  <Node ProjectName="C煤矿" />
+  <Node LineNumber="1号线路" />
+  <Node NotEnable="True" />
+  <Node StartTime="2021/七月/星期一" />
+  <Node Id="1342046116" />
+  <Node ProjectName="D煤矿" />
+  <Node LineNumber="1号线路" />
+  <Node NotEnable="True" />
+  <Node StartTime="2021/七月/星期一" />
+  <Node Id="1483745635" />
+  <Node ProjectName="F煤矿" />
+  <Node LineNumber="1号线路" />
+  <Node NotEnable="True" />
+  <Node StartTime="2021/七月/星期一" />
+  <Node Id="1276274184" />
+  <Node ProjectName="G" />
+  <Node LineNumber="1号线路" />
+  <Node NotEnable="True" />
+  <Node StartTime="2021/七月/星期一" />
+  <MonitorManage StartTime="2021/七月/星期一" NotEnable="False" ProjectName="HH煤矿" Id="1120710593" LineNumber="1号线路">
+    <StartTime>2021/七月/星期一</StartTime>
+    <NotEnable>False</NotEnable>
+    <ProjectName>HH煤矿</ProjectName>
+    <Id>1120710593</Id>
+    <LineNumber>1号线路</LineNumber>
+  </MonitorManage>
+</MonitorManage>

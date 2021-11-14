@@ -1,0 +1,359 @@
+2021-07-16 09:31:56.675 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 09:32:01.687 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 09:32:06.722 [Error] 向服务器发送心跳包出错：Cannot access a disposed object.
+Object name: 'System.Net.Sockets.Socket'.
+2021-07-16 09:32:11.722 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 09:32:16.732 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 09:32:21.733 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 09:32:26.745 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 09:32:31.746 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 09:32:36.746 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 09:32:41.753 [Error] 向服务器发送心跳包出错：Cannot access a disposed object.
+Object name: 'System.Net.Sockets.Socket'.
+2021-07-16 09:32:46.752 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 09:32:51.763 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 09:32:56.764 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 09:33:01.772 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 09:33:06.773 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 09:33:11.774 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 09:33:16.793 [Error] 向服务器发送心跳包出错：Cannot access a disposed object.
+Object name: 'System.Net.Sockets.Socket'.
+2021-07-16 09:33:21.795 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 09:33:26.797 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 09:33:31.796 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 09:33:36.815 [Error] 向服务器发送心跳包出错：Cannot access a disposed object.
+Object name: 'System.Net.Sockets.Socket'.
+2021-07-16 09:33:41.823 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 09:33:46.825 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 09:33:51.824 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 09:33:56.824 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 09:34:01.824 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 09:34:06.825 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 09:34:11.836 [Error] 向服务器发送心跳包出错：Cannot access a disposed object.
+Object name: 'System.Net.Sockets.Socket'.
+2021-07-16 09:34:16.849 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 09:34:21.855 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 09:34:26.855 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 09:34:31.861 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 09:34:36.862 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 09:34:41.875 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 09:34:46.883 [Error] 向服务器发送心跳包出错：Cannot access a disposed object.
+Object name: 'System.Net.Sockets.Socket'.
+2021-07-16 09:34:51.891 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 09:34:56.892 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 09:35:01.892 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 09:35:06.913 [Error] 向服务器发送心跳包出错：Cannot access a disposed object.
+Object name: 'System.Net.Sockets.Socket'.
+2021-07-16 09:35:11.920 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 09:35:16.920 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 09:35:21.921 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 09:35:27.160 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 09:35:32.160 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 09:35:37.173 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 09:35:42.182 [Error] 向服务器发送心跳包出错：Cannot access a disposed object.
+Object name: 'System.Net.Sockets.Socket'.
+2021-07-16 09:35:47.183 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 09:35:52.185 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 09:35:57.185 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 09:36:37.364 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 09:38:08.015 [Error] 向服务器发送心跳包出错：Cannot access a disposed object.
+Object name: 'System.Net.Sockets.Socket'.
+2021-07-16 09:39:04.901 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 09:39:18.226 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 09:39:49.646 [Error] 处理接收的数据包 异常：Object reference not set to an instance of an object.
+   at FS.Monitor.Common.Scoket.SocketClientHelper.ReleaseServerSocket() in D:\vsCode\FS.Monitor\FS.Monitor\Common\Scoket\SocketClientHelper.cs:line 227
+   at FS.Monitor.Common.Scoket.SocketClientHelper.ReceiveData(Socket socket, SocketAsyncEventArgs e) in D:\vsCode\FS.Monitor\FS.Monitor\Common\Scoket\SocketClientHelper.cs:line 363
+2021-07-16 09:39:49.647 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 09:40:29.509 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 09:42:38.035 [Error] Cannot access a disposed object.
+Object name: 'System.Net.Sockets.Socket'.
+   at System.Net.Sockets.Socket.Send(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, SocketError& errorCode)
+   at System.Net.Sockets.Socket.Send(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   at System.Net.Sockets.Socket.Send(Byte[] buffer)
+   at FS.Monitor.Common.Scoket.SocketHelper.Send(Socket socket, Byte[] data) in D:\vsCode\FS.Monitor\FS.Monitor\Common\Scoket\SocketHelper.cs:line 62
+2021-07-16 09:43:08.464 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 09:44:24.414 [Error] 向服务器发送心跳包出错：Cannot access a disposed object.
+Object name: 'System.Net.Sockets.Socket'.
+2021-07-16 09:44:31.061 [Error] 向服务器发送心跳包出错：Cannot access a disposed object.
+Object name: 'System.Net.Sockets.Socket'.
+2021-07-16 09:44:31.061 [Error] Object reference not set to an instance of an object.
+   at FS.Monitor.Common.Scoket.SocketClientHelper.ReleaseServerSocket() in D:\vsCode\FS.Monitor\FS.Monitor\Common\Scoket\SocketClientHelper.cs:line 225
+   at FS.Monitor.Common.Scoket.SocketClientHelper.CheckServer(Object sender, ElapsedEventArgs e) in D:\vsCode\FS.Monitor\FS.Monitor\Common\Scoket\SocketClientHelper.cs:line 187
+2021-07-16 09:44:51.081 [Error] 向服务器发送心跳包出错：Cannot access a disposed object.
+Object name: 'System.Net.Sockets.Socket'.
+2021-07-16 09:45:06.097 [Error] 向服务器发送心跳包出错：Cannot access a disposed object.
+Object name: 'System.Net.Sockets.Socket'.
+2021-07-16 09:45:24.806 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 09:45:29.805 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 09:45:34.810 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 09:45:39.811 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 09:45:44.811 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 09:45:49.814 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 09:46:51.313 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 09:47:24.843 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 09:49:18.209 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 09:53:28.378 [Error] 由于目标计算机积极拒绝，无法连接。 192.168.100.181:5000
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at FS.Monitor.Common.Scoket.SocketClientHelper.ConnectServer() in D:\vsCode\FS.Monitor\FS.Monitor\Common\Scoket\SocketClientHelper.cs:line 123
+2021-07-16 09:57:39.614 [Error] 处理接收的数据包 异常：Object reference not set to an instance of an object.
+   at FS.Monitor.Common.Scoket.SocketClientHelper.ReleaseServerSocket() in D:\vsCode\FS.Monitor\FS.Monitor\Common\Scoket\SocketClientHelper.cs:line 227
+   at FS.Monitor.Common.Scoket.SocketClientHelper.ReceiveData(Socket socket, SocketAsyncEventArgs e) in D:\vsCode\FS.Monitor\FS.Monitor\Common\Scoket\SocketClientHelper.cs:line 363
+2021-07-16 09:57:39.615 [Error] 向服务器发送心跳包出错：Cannot access a disposed object.
+Object name: 'System.Net.Sockets.Socket'.
+2021-07-16 10:02:16.045 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 10:05:23.264 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 10:05:28.264 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 10:05:33.278 [Error] 向服务器发送心跳包出错：Cannot access a disposed object.
+Object name: 'System.Net.Sockets.Socket'.
+2021-07-16 10:05:38.279 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 10:05:43.284 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 10:05:48.282 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 10:05:53.280 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 10:05:58.281 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 10:06:03.292 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 10:06:08.301 [Error] 向服务器发送心跳包出错：Cannot access a disposed object.
+Object name: 'System.Net.Sockets.Socket'.
+2021-07-16 10:06:13.301 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 10:06:18.302 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 10:06:23.311 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 10:06:28.313 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 10:06:33.326 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 10:06:38.327 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 10:06:43.336 [Error] 向服务器发送心跳包出错：Cannot access a disposed object.
+Object name: 'System.Net.Sockets.Socket'.
+2021-07-16 10:06:48.347 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 10:06:53.356 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 10:06:58.356 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 10:07:03.366 [Error] 向服务器发送心跳包出错：Cannot access a disposed object.
+Object name: 'System.Net.Sockets.Socket'.
+2021-07-16 10:07:08.383 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 10:07:13.389 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 10:07:18.386 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 10:07:23.387 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 10:07:28.387 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 10:07:33.390 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 10:07:38.398 [Error] 向服务器发送心跳包出错：Cannot access a disposed object.
+Object name: 'System.Net.Sockets.Socket'.
+2021-07-16 10:07:43.399 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 10:07:48.412 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 10:07:53.419 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 10:07:58.422 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 10:08:03.425 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 10:08:08.434 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 10:08:13.445 [Error] 向服务器发送心跳包出错：Cannot access a disposed object.
+Object name: 'System.Net.Sockets.Socket'.
+2021-07-16 10:08:18.454 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 10:08:23.466 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 10:08:28.466 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 10:08:33.477 [Error] 向服务器发送心跳包出错：Cannot access a disposed object.
+Object name: 'System.Net.Sockets.Socket'.
+2021-07-16 10:08:38.483 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 10:08:43.495 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 10:08:48.499 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 10:08:53.741 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 10:08:58.742 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 10:09:03.753 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 10:09:09.770 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 10:09:14.770 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 10:09:19.774 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 10:09:25.797 [Error] 向服务器发送心跳包出错：Cannot access a disposed object.
+Object name: 'System.Net.Sockets.Socket'.
+2021-07-16 10:09:30.797 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 10:09:35.808 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 10:09:40.808 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 10:09:46.817 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 10:09:51.826 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 10:09:56.829 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 10:10:02.838 [Error] 向服务器发送心跳包出错：Cannot access a disposed object.
+Object name: 'System.Net.Sockets.Socket'.
+2021-07-16 10:10:07.839 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 10:10:12.840 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 10:10:17.841 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 10:10:23.861 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 10:10:28.861 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 10:10:45.633 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 10:29:26.391 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 10:29:38.505 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 10:29:55.194 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 10:33:24.220 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 10:34:47.549 [Error] 向服务器发送心跳包出错：Cannot access a disposed object.
+Object name: 'System.Net.Sockets.Socket'.
+2021-07-16 10:35:01.927 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 10:37:30.998 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 10:39:27.956 [Error] 向服务器发送心跳包出错：Cannot access a disposed object.
+Object name: 'System.Net.Sockets.Socket'.
+2021-07-16 10:39:38.078 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 10:39:43.083 [Error] 向服务器发送心跳包出错：Cannot access a disposed object.
+Object name: 'System.Net.Sockets.Socket'.
+2021-07-16 10:39:48.086 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 10:42:09.070 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 10:42:14.076 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 10:42:19.077 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 10:42:24.079 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 10:42:29.078 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 10:42:34.078 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 10:52:45.673 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 10:52:50.655 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 10:52:55.664 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 10:53:00.679 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 10:53:05.686 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 10:59:50.429 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 10:59:55.427 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 11:00:00.427 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 11:01:26.017 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 11:01:31.014 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 11:01:36.013 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 11:01:41.017 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 11:01:46.017 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 11:01:51.017 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 11:02:55.483 [Error] 向服务器发送心跳包出错：Cannot access a disposed object.
+Object name: 'System.Net.Sockets.Socket'.
+2021-07-16 11:03:20.801 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 11:03:25.783 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 11:13:03.741 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 11:13:06.079 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 11:13:10.799 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 11:13:15.998 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 11:13:21.839 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 11:13:30.316 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 11:15:04.336 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 11:15:09.345 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 11:22:42.816 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 11:22:47.374 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 11:25:27.369 [Error] 由于目标计算机积极拒绝，无法连接。 192.168.100.181:5000
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at FS.Monitor.Common.Scoket.SocketClientHelper.ConnectServer() in D:\vsCode\FS.Monitor\FS.Monitor\Common\Scoket\SocketClientHelper.cs:line 123
+2021-07-16 11:26:35.787 [Error] 由于目标计算机积极拒绝，无法连接。 192.168.100.181:5000
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at FS.Monitor.Common.Scoket.SocketClientHelper.ConnectServer() in D:\vsCode\FS.Monitor\FS.Monitor\Common\Scoket\SocketClientHelper.cs:line 123
+2021-07-16 11:27:23.667 [Error] 由于目标计算机积极拒绝，无法连接。 192.168.100.181:5000
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at FS.Monitor.Common.Scoket.SocketClientHelper.ConnectServer() in D:\vsCode\FS.Monitor\FS.Monitor\Common\Scoket\SocketClientHelper.cs:line 123
+2021-07-16 13:03:27.688 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 13:03:32.683 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 13:05:17.719 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 13:05:22.721 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 13:06:07.894 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 13:08:07.741 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 13:08:29.987 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 13:09:38.802 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 13:09:43.798 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 13:09:48.800 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 13:21:54.504 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 13:21:59.503 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 13:22:04.501 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 13:22:47.094 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 13:22:52.091 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 13:22:57.095 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 13:26:28.497 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 13:26:33.502 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 13:26:38.503 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 13:59:19.329 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 13:59:24.328 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 13:59:29.326 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 13:59:42.224 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 13:59:56.088 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 14:00:01.095 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 14:00:06.098 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 14:00:11.095 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 14:00:16.097 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 14:00:21.100 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 14:00:26.099 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 14:00:31.102 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 14:00:36.103 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 14:00:41.104 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 14:00:46.105 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 14:00:51.106 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 14:00:56.107 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 14:01:01.110 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 14:01:06.109 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 14:01:11.109 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 14:01:16.110 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 14:01:21.111 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 14:01:26.112 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 14:01:31.112 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 14:01:36.113 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 14:01:41.115 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 14:02:53.646 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 14:02:58.651 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 14:03:03.654 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 14:18:11.973 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 14:18:16.970 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 14:18:21.982 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 14:18:26.981 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 14:18:31.981 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 14:18:36.982 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 14:18:45.129 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 14:18:51.449 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 14:18:57.623 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 14:19:02.624 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 14:19:07.627 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 14:19:12.626 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 14:19:17.627 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 14:19:22.629 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 14:19:27.632 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 14:19:32.631 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 14:19:37.632 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 14:20:09.559 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 14:20:14.565 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 14:20:21.723 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 14:20:27.559 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 14:20:49.924 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 14:20:54.913 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 14:20:59.914 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 14:21:04.920 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 14:21:09.921 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 14:21:14.922 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 14:21:19.922 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 14:21:24.925 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 14:21:32.280 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 14:21:38.264 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 14:21:45.030 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 14:21:50.034 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 14:21:55.031 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 14:22:00.032 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 14:22:05.033 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 14:22:10.035 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 14:22:15.038 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 14:22:20.038 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 14:22:25.039 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 14:22:30.040 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 14:22:35.041 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 14:22:40.042 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 14:22:45.042 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 14:22:50.047 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 14:22:55.045 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 14:23:00.044 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 14:23:05.058 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 14:23:10.059 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 14:23:15.060 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 14:23:20.065 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 14:23:25.062 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 14:23:30.065 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 14:23:35.064 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 14:23:40.065 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 14:23:45.065 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 14:23:50.085 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 14:23:55.077 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 14:32:26.086 [Error] 由于目标计算机积极拒绝，无法连接。 192.168.100.181:5000
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at FS.Monitor.Common.Scoket.SocketClientHelper.ConnectServer() in D:\vsCode\FS.Monitor\FS.Monitor\Common\Scoket\SocketClientHelper.cs:line 123
+2021-07-16 19:45:15.879 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 19:45:16.514 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 19:45:31.776 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 19:45:33.652 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 19:45:47.772 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 19:45:52.779 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 19:45:57.780 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 19:46:35.596 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 19:46:40.604 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 19:46:45.609 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 19:47:00.964 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 19:47:11.443 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 19:47:16.081 [Error] 不是0x55，丢掉错误数据，重新接收
+2021-07-16 19:47:21.632 [Error] 不是0x55，丢掉错误数据，重新接收

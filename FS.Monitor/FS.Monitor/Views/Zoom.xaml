@@ -1,0 +1,54 @@
+﻿<Window
+    x:Class="FS.Monitor.Views.Zoom"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:FS.Monitor.Views"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="Zoom"
+    Width="525"
+    Height="350"
+    AllowsTransparency="True"
+    ShowInTaskbar="False"
+    WindowState="Maximized"
+    WindowStyle="None"
+    mc:Ignorable="d">
+    <Grid Name="rootLayout">
+        <Grid Name="imageArea" PreviewMouseMove="imageArea_PreviewMouseMove">
+            <Image
+                Name="image"
+                HorizontalAlignment="Stretch"
+                VerticalAlignment="Stretch" />
+        </Grid>
+        <Canvas>
+            <Canvas Name="magnifierCanvas" IsHitTestVisible="False">
+
+                <!--  magnifierEllipse就是我们要填充的控件  -->
+                <Border
+                    Width="280"
+                    Height="280"
+                    BorderBrush="LightGray"
+                    BorderThickness="5"
+                    CornerRadius="200">
+                    <Rectangle
+                        Name="magnifierEllipse"
+                        RadiusX="300"
+                        RadiusY="300">
+                        <Rectangle.Fill>
+                            <VisualBrush
+                                x:Name="vb"
+                                Stretch="UniformToFill"
+                                Viewbox="0, 25, 50, 50"
+                                ViewboxUnits="Absolute"
+                                Viewport="0, 0, 1, 1"
+                                ViewportUnits="RelativeToBoundingBox"
+                                Visual="{Binding ElementName=imageArea}" />
+
+                        </Rectangle.Fill>
+                    </Rectangle>
+                </Border>
+            </Canvas>
+        </Canvas>
+    </Grid>
+</Window>
+

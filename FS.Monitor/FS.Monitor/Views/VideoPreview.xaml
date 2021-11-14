@@ -1,0 +1,1080 @@
+﻿<UserControl
+    x:Class="FS.Monitor.Views.VideoPreview"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:lang="clr-namespace:FS.Monitor.Common.Language"
+    xmlns:local="clr-namespace:FS.Monitor.Views"
+    xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:viewmodel="clr-namespace:FS.Monitor.ViewModel"
+    d:DataContext="{d:DesignInstance Type=viewmodel:MainViewModel}"
+    d:DesignHeight="750"
+    d:DesignWidth="1366"
+    Background="#14171c"
+    DataContext="{Binding Source={StaticResource Locator}, Path=Maintain}"
+    mc:Ignorable="d">
+    <UserControl.Resources>
+        <Style x:Key="DefaultSliderThumbStyle" TargetType="Thumb">
+            <Setter Property="Width" Value="15" />
+            <Setter Property="Height" Value="15" />
+            <Setter Property="Background" Value="#FF4ABAD0" />
+            <Setter Property="SnapsToDevicePixels" Value="True" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Thumb">
+                        <Ellipse
+                            Width="{TemplateBinding Width}"
+                            Height="{TemplateBinding Height}"
+                            Fill="{TemplateBinding Background}" />
+                        <!--  Effect="{StaticResource UnhoverThumbEffect}"  -->
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <!--<Setter Property="Effect" Value="{StaticResource HoverThumbEffect}"/>-->
+                                <Setter Property="Cursor" Value="Hand" />
+                            </Trigger>
+                            <Trigger Property="IsDragging" Value="True">
+                                <!--<Setter Property="Effect" Value="{StaticResource DragThumbEffect}"/>-->
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style x:Key="DefaultLeftRepeatButtonStyle" TargetType="RepeatButton">
+            <Setter Property="IsTabStop" Value="False" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="RepeatButton">
+                        <Border Height="4" Background="#FF4ABAD0" />
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style x:Key="DefaultRightRepeatButtonStyle" TargetType="RepeatButton">
+            <Setter Property="IsTabStop" Value="False" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="RepeatButton">
+                        <Border Background="Transparent" />
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style x:Key="BaseSliderStyle" TargetType="Slider">
+            <Setter Property="Width" Value="500" />
+            <Setter Property="MinHeight" Value="30" />
+            <Setter Property="Margin" Value="20" />
+            <Setter Property="Maximum" Value="100" />
+            <Setter Property="IsSnapToTickEnabled" Value="True" />
+            <!--  移到鼠标点击的指定刻度点  -->
+            <Setter Property="IsMoveToPointEnabled" Value="True" />
+            <!--
+                移动的最大最小距离。
+                由于设置了IsMoveToPointEnabled=True，下面两个属性就没发挥作用了。
+                点击RepeatButton时直接就移动到了指定位置。
+                如果为False，那么由于RepeatButton绑定了Slider.DecreaseLarge命令，
+                那点击左右的RepeatButton一次，就移动10个单位距离。
+                同样的还有Slider.DecreaseSmall命令，移动1个单位距离
+            -->
+            <Setter Property="LargeChange" Value="10" />
+            <Setter Property="SmallChange" Value="1" />
+            <Setter Property="Background" Value="LightGray" />
+            <Setter Property="Foreground" Value="#FF797979" />
+            <Setter Property="SnapsToDevicePixels" Value="True" />
+            <Setter Property="IsMoveToPointEnabled" Value="True" />
+        </Style>
+        <Style
+            x:Key="BeautifySliderStyle"
+            BasedOn="{StaticResource BaseSliderStyle}"
+            TargetType="Slider">
+            <Setter Property="Maximum" Value="100" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Slider">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" MinHeight="{TemplateBinding MinHeight}" />
+                                <RowDefinition Height="Auto" />
+                            </Grid.RowDefinitions>
+                            <TickBar
+                                Name="TopTick"
+                                Grid.Row="0"
+                                Height="4"
+                                Fill="{TemplateBinding Foreground}"
+                                Placement="Top"
+                                Visibility="Collapsed" />
+                            <Border
+                                Name="TrackBackground"
+                                Grid.Row="1"
+                                Height="4"
+                                Background="{TemplateBinding Background}" />
+                            <Track Name="PART_Track" Grid.Row="1">
+                                <Track.DecreaseRepeatButton>
+                                    <RepeatButton Command="Slider.DecreaseLarge" Style="{StaticResource DefaultLeftRepeatButtonStyle}" />
+                                </Track.DecreaseRepeatButton>
+                                <Track.Thumb>
+                                    <Thumb Style="{StaticResource DefaultSliderThumbStyle}" />
+                                </Track.Thumb>
+                                <Track.IncreaseRepeatButton>
+                                    <RepeatButton Command="Slider.IncreaseLarge" Style="{StaticResource DefaultRightRepeatButtonStyle}" />
+                                </Track.IncreaseRepeatButton>
+                            </Track>
+                            <TickBar
+                                Name="BottomTick"
+                                Grid.Row="2"
+                                Height="4"
+                                Fill="{TemplateBinding Foreground}"
+                                Placement="Bottom"
+                                Visibility="Collapsed" />
+                        </Grid>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="TickPlacement" Value="Both">
+                                <Setter TargetName="TopTick" Property="Visibility" Value="Visible" />
+                                <Setter TargetName="BottomTick" Property="Visibility" Value="Visible" />
+                            </Trigger>
+                            <Trigger Property="TickPlacement" Value="BottomRight">
+                                <Setter TargetName="BottomTick" Property="Visibility" Value="Visible" />
+                            </Trigger>
+                            <Trigger Property="TickPlacement" Value="TopLeft">
+                                <Setter TargetName="TopTick" Property="Visibility" Value="Visible" />
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style x:Name="comboxStyle" TargetType="{x:Type ComboBox}">
+            <Setter Property="Margin" Value="5" />
+            <Setter Property="Width" Value="120" />
+            <Setter Property="HorizontalAlignment" Value="Stretch" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type ComboBox}">
+                        <Border
+                            Background="Transparent"
+                            BorderBrush="Gray"
+                            BorderThickness="1"
+                            CornerRadius="5">
+                            <Grid>
+                                <!--  下拉箭头  -->
+                                <ToggleButton
+                                    Width="Auto"
+                                    MinWidth="0"
+                                    MinHeight="0"
+                                    Margin="2"
+                                    ClickMode="Press"
+                                    Focusable="False"
+                                    IsChecked="{Binding IsDropDownOpen, Mode=TwoWay, RelativeSource={RelativeSource TemplatedParent}}">
+                                    <ToggleButton.Style>
+                                        <Style TargetType="{x:Type ToggleButton}">
+                                            <Setter Property="MinWidth" Value="0" />
+                                            <Setter Property="MinHeight" Value="0" />
+                                            <Setter Property="Width" Value="Auto" />
+                                            <Setter Property="Height" Value="Auto" />
+                                            <Setter Property="Background" Value="Transparent" />
+                                            <Setter Property="BorderBrush" Value="#00000000" />
+                                            <Setter Property="BorderThickness" Value="2" />
+                                            <Setter Property="Template">
+                                                <Setter.Value>
+                                                    <ControlTemplate TargetType="{x:Type ToggleButton}">
+                                                        <DockPanel
+                                                            Background="{TemplateBinding Background}"
+                                                            LastChildFill="False"
+                                                            SnapsToDevicePixels="True">
+                                                            <Border
+                                                                x:Name="Border"
+                                                                BorderBrush="{TemplateBinding BorderBrush}"
+                                                                BorderThickness="{TemplateBinding BorderThickness}"
+                                                                DockPanel.Dock="Right">
+                                                                <Path
+                                                                    HorizontalAlignment="Center"
+                                                                    VerticalAlignment="Center"
+                                                                    Data="M0,0L3.5,4 7,0z"
+                                                                    Fill="{TemplateBinding Foreground}" />
+                                                            </Border>
+                                                        </DockPanel>
+                                                        <ControlTemplate.Triggers>
+                                                            <Trigger Property="IsChecked" Value="True" />
+                                                        </ControlTemplate.Triggers>
+                                                    </ControlTemplate>
+                                                </Setter.Value>
+                                            </Setter>
+                                            <Style.Triggers>
+                                                <Trigger Property="IsEnabled" Value="False">
+                                                    <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.ControlDarkBrushKey}}" />
+                                                </Trigger>
+                                            </Style.Triggers>
+                                        </Style>
+                                    </ToggleButton.Style>
+                                </ToggleButton>
+                                <!--  项内容  -->
+                                <ContentPresenter
+                                    Margin="3"
+                                    HorizontalAlignment="Stretch"
+                                    VerticalAlignment="Center"
+                                    Content="{TemplateBinding SelectionBoxItem}"
+                                    ContentTemplate="{TemplateBinding SelectionBoxItemTemplate}"
+                                    ContentTemplateSelector="{TemplateBinding ItemTemplateSelector}"
+                                    IsHitTestVisible="False" />
+                                <TextBox
+                                    x:Name="PART_EditableTextBox"
+                                    HorizontalAlignment="Stretch"
+                                    Focusable="True"
+                                    IsReadOnly="False"
+                                    Visibility="Collapsed" />
+                                <!--  下拉显示面板HorizontalOffset:设置下拉面板的相对位置  -->
+                                <Popup
+                                    Width="{TemplateBinding ActualWidth}"
+                                    Focusable="False"
+                                    HorizontalOffset="-1"
+                                    IsOpen="{TemplateBinding IsDropDownOpen}"
+                                    PopupAnimation="Slide">
+                                    <Grid HorizontalAlignment="Stretch" SnapsToDevicePixels="True">
+                                        <Border
+                                            HorizontalAlignment="Stretch"
+                                            BorderBrush="White"
+                                            BorderThickness="1,1,1,1"
+                                            CornerRadius="5">
+                                            <Border.Background>
+                                                <SolidColorBrush Color="White" />
+                                            </Border.Background>
+                                        </Border>
+                                        <ScrollViewer HorizontalAlignment="Stretch" SnapsToDevicePixels="True">
+                                            <StackPanel
+                                                HorizontalAlignment="Stretch"
+                                                IsItemsHost="True"
+                                                KeyboardNavigation.DirectionalNavigation="Contained" />
+                                        </ScrollViewer>
+                                    </Grid>
+                                </Popup>
+                            </Grid>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style x:Key="CheckBoxSwitchStyle" TargetType="CheckBox">
+            <Setter Property="IsChecked" Value="False" />
+            <Setter Property="Cursor" Value="Hand" />
+            <Setter Property="FontFamily" Value="/MESToolIntegration;component/Fonts/#iconfont" />
+            <Setter Property="Background" Value="#FFFFFF" />
+            <Setter Property="Width" Value="300" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="CheckBox">
+                        <Border
+                            Name="CheckTrueBG"
+                            Width="80"
+                            Height="40"
+                            Background="#FFFFFF"
+                            BorderBrush="#ACACAC"
+                            BorderThickness="1"
+                            CornerRadius="20">
+                            <Grid>
+                                <Border
+                                    x:Name="border"
+                                    Width="32"
+                                    Height="32"
+                                    Margin="0"
+                                    HorizontalAlignment="Left"
+                                    VerticalAlignment="Center"
+                                    Background="#FF1A1D26"
+                                    BorderThickness="0.5"
+                                    CornerRadius="20">
+                                    <Border.RenderTransform>
+                                        <TranslateTransform X="1" />
+                                    </Border.RenderTransform>
+                                </Border>
+                                <TextBlock
+                                    x:Name="txt"
+                                    Margin="24,10,0,2.798"
+                                    HorizontalAlignment="Left"
+                                    VerticalAlignment="Stretch"
+                                    FontFamily="iconfont"
+                                    FontSize="{TemplateBinding FontSize}"
+                                    Foreground="#ACACAC"
+                                    Text="{TemplateBinding Content}"
+                                    d:LayoutOverrides="Height">
+                                    <TextBlock.RenderTransform>
+                                        <TranslateTransform X="20" />
+                                    </TextBlock.RenderTransform>
+                                </TextBlock>
+                            </Grid>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsChecked" Value="true">
+                                <Setter TargetName="CheckTrueBG" Property="Background" Value="#FF4ABAD0" />
+                                <Setter TargetName="txt" Property="Foreground" Value="#FFFFFF" />
+                                <Setter TargetName="border" Property="Background" Value="#FFFFFF" />
+                                <Setter Property="Width" Value="300" />
+                                <Setter TargetName="txt" Property="Text" Value="{Binding Tag, RelativeSource={RelativeSource TemplatedParent}}" />
+                                <Trigger.EnterActions>
+                                    <BeginStoryboard>
+                                        <Storyboard>
+                                            <DoubleAnimation
+                                                Storyboard.TargetName="border"
+                                                Storyboard.TargetProperty="(UIElement.RenderTransform).(TranslateTransform.X)"
+                                                To="44"
+                                                Duration="00:00:0.2" />
+                                            <DoubleAnimation
+                                                Storyboard.TargetName="txt"
+                                                Storyboard.TargetProperty="(UIElement.RenderTransform).(TranslateTransform.X)"
+                                                To="-10"
+                                                Duration="00:00:0.2" />
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </Trigger.EnterActions>
+                                <Trigger.ExitActions>
+                                    <BeginStoryboard>
+                                        <Storyboard>
+                                            <DoubleAnimation
+                                                Storyboard.TargetName="border"
+                                                Storyboard.TargetProperty="(UIElement.RenderTransform).(TranslateTransform.X)"
+                                                To="0"
+                                                Duration="00:00:0.2" />
+                                            <DoubleAnimation
+                                                Storyboard.TargetName="txt"
+                                                Storyboard.TargetProperty="(UIElement.RenderTransform).(TranslateTransform.X)"
+                                                To="17"
+                                                Duration="00:00:0.2" />
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </Trigger.ExitActions>
+                            </Trigger>
+                            <Trigger Property="IsChecked" Value="False">
+                                <Setter TargetName="txt" Property="Text" Value="{Binding Content, RelativeSource={RelativeSource TemplatedParent}}" />
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style x:Key="RoundedGelButton" TargetType="Button">
+            <Setter Property="Width" Value="200" />
+            <Setter Property="Height" Value="200" />
+            <Setter Property="Foreground" Value="White" />
+            <Setter Property="FontFamily" Value="微软雅黑" />
+            <Setter Property="FontSize" Value="100" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Grid>
+                            <Ellipse
+                                Name="GelBackground"
+                                Fill="Red"
+                                StrokeThickness="0.5">
+                                <Ellipse.Stroke>
+                                    <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                                        <GradientStop Offset="0" Color="#ff7e7e7e" />
+                                        <GradientStop Offset="1" Color="Red" />
+                                    </LinearGradientBrush>
+                                </Ellipse.Stroke>
+                            </Ellipse>
+                            <Ellipse Margin="15,5,15,50">
+                                <Ellipse.Fill>
+                                    <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                                        <GradientStop Offset="0" Color="#aaffffff" />
+                                        <GradientStop Offset="1" Color="Transparent" />
+                                    </LinearGradientBrush>
+                                </Ellipse.Fill>
+                            </Ellipse>
+                            <ContentPresenter
+                                Name="GelButtonContent"
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center"
+                                Content="{TemplateBinding Content}" />
+                        </Grid>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="GelBackground" Property="Ellipse.Fill">
+                                    <Setter.Value>
+                                        <RadialGradientBrush>
+                                            <GradientStop Offset="1" Color="#FF4ABAD0" />
+                                        </RadialGradientBrush>
+                                    </Setter.Value>
+                                </Setter>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter TargetName="GelBackground" Property="Ellipse.Fill">
+                                    <Setter.Value>
+                                        <RadialGradientBrush>
+                                            <GradientStop Offset="0" Color="#FF4ABAD0" />
+                                            <GradientStop Offset="1" Color="#FF4ABAD0" />
+                                        </RadialGradientBrush>
+                                    </Setter.Value>
+                                </Setter>
+                                <Setter Property="Content" Value="开始" />
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </UserControl.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80*" />
+            <RowDefinition Height="40" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <materialDesign:DrawerHost
+            x:Name="DrawerHost"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            BorderBrush="{DynamicResource MaterialDesignDivider}"
+            BorderThickness="2">
+            <materialDesign:DrawerHost.Style>
+                <Style BasedOn="{StaticResource {x:Type materialDesign:DrawerHost}}" TargetType="materialDesign:DrawerHost">
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding IsChecked, ElementName=BackgroundToggle}" Value="True">
+                            <Setter Property="OverlayBackground" Value="{DynamicResource PrimaryHueMidBrush}" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </materialDesign:DrawerHost.Style>
+            <materialDesign:DrawerHost.TopDrawerContent>
+                <Grid
+                    x:Name="spTop"
+                    Grid.Row="0"
+                    Height="250"
+                    Margin="5"
+                    HorizontalAlignment="Left"
+                    Background="White">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="20*" />
+                        <ColumnDefinition Width="40*" />
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Grid.Column="0" Background="#FFB7B8BC">
+                        <Image
+                            Width="500"
+                            Height="200"
+                            Source="/Images/video.png" />
+                        <Image />
+                    </StackPanel>
+                    <ScrollViewer
+                        Grid.Column="1"
+                        HorizontalAlignment="Left"
+                        HorizontalScrollBarVisibility="Hidden"
+                        VerticalScrollBarVisibility="Hidden">
+                        <StackPanel
+                            Grid.Column="1"
+                            Margin="5,0,0,0"
+                            HorizontalAlignment="Left"
+                            Background="#FFCCCCCC"
+                            Orientation="Horizontal">
+                            <Image
+                                Width="300"
+                                Height="200"
+                                Margin="20,0"
+                                Source="/Images/Title.png" />
+                            <Image />
+                            <Image
+                                Width="300"
+                                Height="200"
+                                Margin="20,0"
+                                Source="/Images/Title.png" />
+                            <Image />
+                            <Image
+                                Width="300"
+                                Height="200"
+                                Margin="20,0"
+                                Source="/Images/Title.png" />
+                            <Image />
+                        </StackPanel>
+                    </ScrollViewer>
+                </Grid>
+            </materialDesign:DrawerHost.TopDrawerContent>
+            <!--  一号点  -->
+            <DockPanel
+                Grid.Row="0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top">
+                <StackPanel Grid.Row="0" Orientation="Vertical">
+                    <Border
+                        Width="130"
+                        Margin="20,5,0,0"
+                        HorizontalAlignment="Left"
+                        Background="#FF4ABAD0"
+                        BorderBrush="Transparent"
+                        BorderThickness="1"
+                        CornerRadius="10 10 0 0">
+                        <TextBlock
+                            HorizontalAlignment="Center"
+                            FontSize="16"
+                            Foreground="White"
+                            Text="{Binding OneSignVertex, Source={x:Static lang:LangProvider.Instance}}" />
+                    </Border>
+                    <Grid Grid.Row="1">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+                        <Viewbox Grid.Column="0">
+                            <UserControl
+                                x:Name="uc"
+                                Width="1500"
+                                Height="505">
+                                <Border
+                                    Name="bdVideo"
+                                    Grid.Row="0"
+                                    Grid.Column="0"
+                                    Margin="5,0"
+                                    Background="Gray"
+                                    CornerRadius="5"
+                                    Loaded="Border_Loaded">
+                                    <Grid x:Name="Image1" />
+                                </Border>
+                            </UserControl>
+                        </Viewbox>
+                    </Grid>
+                </StackPanel>
+                <Button
+                    x:Name="btnArrowUp"
+                    Grid.Row="1"
+                    Width="150"
+                    Height="44"
+                    Margin="-1200,420,0,0"
+                    HorizontalAlignment="Left"
+                    Command="{x:Static materialDesign:DrawerHost.OpenDrawerCommand}"
+                    CommandParameter="{x:Static Dock.Top}"
+                    Content="{materialDesign:PackIcon Kind=ArrowUp}" />
+            </DockPanel>
+        </materialDesign:DrawerHost>
+
+        <!--  视频控制  -->
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+            <Border
+                Grid.Column="0"
+                Height="Auto"
+                Background="#FF1A1D26"
+                BorderBrush="#FF8A8C92"
+                BorderThickness="1">
+                <Grid Grid.Column="0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="25*" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+                    <StackPanel
+                        Grid.Column="0"
+                        Margin="15,0"
+                        HorizontalAlignment="Left"
+                        Background="#FF1A1D26"
+                        Orientation="Vertical">
+                        <TextBlock
+                            Margin="0,15,0,0"
+                            FontSize="16"
+                            Foreground="#FF797979"
+                            Text="{Binding Contrast, Source={x:Static lang:LangProvider.Instance}}" />
+                        <TextBlock
+                            Margin="0,15,0,0"
+                            FontSize="16"
+                            Foreground="#FF797979"
+                            Text="{Binding Saturation, Source={x:Static lang:LangProvider.Instance}}" />
+                        <TextBlock
+                            Margin="0,15,0,0"
+                            FontSize="16"
+                            Foreground="#FF797979"
+                            Text="{Binding Luminance, Source={x:Static lang:LangProvider.Instance}}" />
+                        <TextBlock
+                            Margin="0,15,0,0"
+                            FontSize="16"
+                            Foreground="#FF797979"
+                            Text="{Binding Chroma, Source={x:Static lang:LangProvider.Instance}}" />
+                        <TextBlock
+                            Margin="0,15,0,0"
+                            HorizontalAlignment="Left"
+                            VerticalAlignment="Center"
+                            FontSize="16"
+                            Foreground="#FF797979"
+                            Text="{Binding LightBrightness, Source={x:Static lang:LangProvider.Instance}}" />
+                        <TextBlock
+                            Margin="0,15,0,0"
+                            HorizontalAlignment="Left"
+                            VerticalAlignment="Center"
+                            FontSize="16"
+                            Foreground="#FF797979"
+                            Text="{Binding PitchAngle, Source={x:Static lang:LangProvider.Instance}}" />
+                    </StackPanel>
+                    <StackPanel
+                        Grid.Column="1"
+                        Width="Auto"
+                        Orientation="Vertical">
+                        <Slider
+                            x:Name="Contrast"
+                            Width="220"
+                            Margin="0,10,0,0"
+                            IsMoveToPointEnabled="True"
+                            IsSnapToTickEnabled="True"
+                            Maximum="99"
+                            Minimum="0"
+                            MouseMove="Contrast_MouseMove"
+                            Style="{StaticResource BeautifySliderStyle}"
+                            TickFrequency="{Binding DiscreteHorizontal.TickFrequency}"
+                            ValueChanged="Contrast_ValueChanged"
+                            Value="25" />
+                        <Slider
+                            x:Name="Saturation"
+                            Width="220"
+                            Margin="0,5,0,0"
+                            IsMoveToPointEnabled="True"
+                            IsSnapToTickEnabled="True"
+                            Minimum="0"
+                            MouseMove="Saturation_MouseMove"
+                            Style="{StaticResource BeautifySliderStyle}"
+                            Value="25" />
+                        <Slider
+                            x:Name="Brightness"
+                            Width="220"
+                            Margin="0,5,0,0"
+                            IsMoveToPointEnabled="True"
+                            Minimum="0"
+                            MouseMove="Brightness_MouseMove"
+                            Style="{StaticResource BeautifySliderStyle}"
+                            Value="25" />
+                        <Slider
+                            x:Name="Chroma"
+                            Width="220"
+                            Margin="0,5,0,0"
+                            IsMoveToPointEnabled="True"
+                            Maximum="200"
+                            Minimum="0"
+                            MouseMove="Chroma_MouseMove"
+                            Style="{StaticResource BeautifySliderStyle}"
+                            ValueChanged="Chroma_ValueChanged"
+                            Value="{Binding SliderValue1}" />
+                        <Slider
+                            x:Name="Lamp"
+                            Width="220"
+                            Margin="0,5,0,0"
+                            Minimum="0"
+                            MouseMove="Lamp_MouseMove"
+                            Style="{StaticResource BeautifySliderStyle}"
+                            Value="25" />
+                        <Slider
+                            x:Name="Pitch"
+                            Width="220"
+                            Margin="0,5,0,0"
+                            Minimum="0"
+                            MouseMove="Pitch_MouseMove"
+                            Style="{StaticResource BeautifySliderStyle}"
+                            Value="25" />
+
+                    </StackPanel>
+                    <StackPanel Grid.Column="2" Margin="10,10,20,0">
+                        <TextBlock
+                            x:Name="txtContrast"
+                            Margin="0,5,0,0"
+                            FontSize="16"
+                            Foreground="#FF797979"
+                            Text="0" />
+                        <TextBlock
+                            x:Name="txtSaturation"
+                            Margin="0,15,0,0"
+                            FontSize="16"
+                            Foreground="#FF797979"
+                            Text="0" />
+                        <TextBlock
+                            x:Name="txtBrightness"
+                            Margin="0,15,0,0"
+                            FontSize="16"
+                            Foreground="#FF797979"
+                            Text="0" />
+                        <TextBlock
+                            x:Name="txtChroma"
+                            Margin="0,15,0,0"
+                            FontSize="16"
+                            Foreground="#FF797979"
+                            Text="0" />
+                        <TextBlock
+                            x:Name="txtLamp"
+                            Margin="0,15,0,0"
+                            FontSize="16"
+                            Foreground="#FF797979"
+                            Text="0" />
+                        <TextBlock
+                            x:Name="txtPitch"
+                            Margin="0,15,0,0"
+                            FontSize="16"
+                            Foreground="#FF797979"
+                            Text="0°" />
+                    </StackPanel>
+                </Grid>
+            </Border>
+
+            <Grid Grid.Row="1" Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Border
+                    Grid.Row="0"
+                    Width="Auto"
+                    Margin="5,0,0,0"
+                    Background="#FF212330"
+                    BorderBrush="#FF797979"
+                    BorderThickness="1">
+                    <StackPanel
+                        Grid.Row="3"
+                        Width="Auto"
+                        Height="60"
+                        Orientation="Horizontal">
+                        <TextBlock
+                            Grid.Row="3"
+                            Margin="10,0"
+                            VerticalAlignment="Center"
+                            FontSize="16"
+                            Foreground="#FF797979"
+                            Text="{Binding ConveyorChoice, Source={x:Static lang:LangProvider.Instance}}" />
+                        <ComboBox
+                            x:Name="cmbConveyor"
+                            Grid.Row="3"
+                            Width="150"
+                            Height="40"
+                            Margin="10,0"
+                            Padding="20,0"
+                            HorizontalAlignment="Right"
+                            BorderThickness="1"
+                            FontSize="16"
+                            Foreground="#FF4ABAD0"
+                            SelectedIndex="0">
+                            <ComboBoxItem Content="{Binding CurrentLineOne, Source={x:Static lang:LangProvider.Instance}}" />
+                            <ComboBoxItem>输送机2</ComboBoxItem>
+                            <ComboBoxItem>输送机3</ComboBoxItem>
+                        </ComboBox>
+                    </StackPanel>
+                </Border>
+                <Border
+                    Grid.Row="1"
+                    Width="Auto"
+                    Margin="5,5,0,0"
+                    Background="#FF212330"
+                    BorderBrush="#FF797979"
+                    BorderThickness="1">
+                    <StackPanel
+                        Grid.Row="3"
+                        Width="Auto"
+                        Height="60"
+                        Orientation="Horizontal">
+                        <TextBlock
+                            Grid.Row="3"
+                            Margin="10,0,0,0"
+                            VerticalAlignment="Center"
+                            FontSize="16"
+                            Foreground="#FF797979"
+                            Text="{Binding SprayWash, Source={x:Static lang:LangProvider.Instance}}" />
+                        <CheckBox
+                            x:Name="chk"
+                            Width="80"
+                            Margin="50,0"
+                            HorizontalAlignment="Left"
+                            Background="#BDBDBD"
+                            Content="{Binding CloseTag, Source={x:Static lang:LangProvider.Instance}}"
+                            FontSize="13"
+                            Foreground="LightGray"
+                            Style="{StaticResource CheckBoxSwitchStyle}"
+                            Tag="{Binding Open, Source={x:Static lang:LangProvider.Instance}}" />
+                    </StackPanel>
+                </Border>
+                <Border
+                    Grid.Row="3"
+                    Height="93"
+                    Margin="5,5,0,0"
+                    Background="#FF212330"
+                    BorderBrush="#FF797979"
+                    BorderThickness="1">
+                    <StackPanel HorizontalAlignment="Left" Orientation="Vertical">
+                        <Border
+                            Grid.Row="3"
+                            Margin="20,0,0,0"
+                            BorderBrush="LightGray"
+                            BorderThickness="0,0,0,1">
+                            <StackPanel Grid.Row="1" Orientation="Horizontal">
+                                <Button
+                                    Grid.Row="1"
+                                    Width="30"
+                                    Height="30"
+                                    Margin="0,8"
+                                    Background="Transparent"
+                                    BorderBrush="Gray"
+                                    BorderThickness="1"
+                                    CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}, Path=ToolTip}"
+                                    Style="{StaticResource MaterialDesignFlatButton}"
+                                    ToolTip="{Binding Accelerate, Source={x:Static lang:LangProvider.Instance}}">
+                                    <materialDesign:PackIcon
+                                        Width="20"
+                                        Height="20"
+                                        Margin="-12,0"
+                                        Foreground="#FF4ABAD0"
+                                        Kind="PlusCircleOutline" />
+                                </Button>
+                                <TextBlock
+                                    Grid.Row="2"
+                                    Margin="20,0,0,0"
+                                    VerticalAlignment="Center"
+                                    FontSize="16"
+                                    Foreground="#FF797979"
+                                    Text="{Binding DustCoverSpeedAdjustment, Source={x:Static lang:LangProvider.Instance}}" />
+                                <Button
+                                    Grid.Row="2"
+                                    Width="30"
+                                    Height="30"
+                                    Margin="30,0,0,0"
+                                    HorizontalAlignment="Right"
+                                    Background="Transparent"
+                                    BorderBrush="Gray"
+                                    BorderThickness="1"
+                                    CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}, Path=ToolTip}"
+                                    Style="{StaticResource MaterialDesignFlatButton}"
+                                    ToolTip="{Binding Decelerate, Source={x:Static lang:LangProvider.Instance}}">
+                                    <materialDesign:PackIcon
+                                        Width="20"
+                                        Height="20"
+                                        Margin="-12,0"
+                                        Foreground="#FF4ABAD0"
+                                        Kind="MinusCircle" />
+                                </Button>
+                            </StackPanel>
+                        </Border>
+                        <StackPanel
+                            Margin="0,5,0,0"
+                            HorizontalAlignment="Left"
+                            Orientation="Horizontal">
+                            <TextBlock
+                                Grid.Row="4"
+                                Margin="50,0"
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center"
+                                FontSize="16"
+                                Foreground="#FF797979"
+                                Text="{Binding TurnSpeed, Source={x:Static lang:LangProvider.Instance}}" />
+                            <TextBlock
+                                Grid.Row="4"
+                                Margin="-30,0"
+                                FontSize="16"
+                                Foreground="#FF4ABAD0"
+                                Text="100r/min" />
+                        </StackPanel>
+                    </StackPanel>
+                </Border>
+            </Grid>
+
+            <Border
+                Grid.Column="2"
+                Width="Auto"
+                Margin="5,1,10,1"
+                Background="#FF212330"
+                BorderBrush="#FF797979"
+                BorderThickness="1">
+                <Grid Margin="0,0,60,9">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+                    <Image
+                        Grid.Column="0"
+                        Width="84"
+                        Height="200"
+                        Margin="0,7"
+                        HorizontalAlignment="Left"
+                        Source="/Images/lamp.png" />
+                    <TextBlock
+                        Grid.Column="1"
+                        Margin="0,20,0,0"
+                        HorizontalAlignment="Left"
+                        FontSize="18"
+                        Foreground="Red"
+                        Text="{Binding AbnormalWarning, Source={x:Static lang:LangProvider.Instance}}" />
+                    <TextBlock
+                        Grid.Column="1"
+                        Margin="0,80,0,0"
+                        HorizontalAlignment="Left"
+                        FontSize="18"
+                        Foreground="GreenYellow"
+                        Text="{Binding AbnormalWarning, Source={x:Static lang:LangProvider.Instance}}" />
+                    <TextBlock
+                        Grid.Column="1"
+                        Margin="0,150,0,0"
+                        HorizontalAlignment="Left"
+                        FontSize="18"
+                        Foreground="Yellow"
+                        Text="{Binding AbnormalWarning, Source={x:Static lang:LangProvider.Instance}}" />
+                </Grid>
+            </Border>
+
+            <Border
+                Grid.Column="4"
+                Width="Auto"
+                Margin="5,10,0,31"
+                Background="#FF212330"
+                BorderBrush="#FF797979"
+                BorderThickness="1" />
+            <StackPanel
+                Grid.Row="1"
+                Grid.Column="3"
+                Orientation="Vertical">
+                <Border
+                    Grid.Row="1"
+                    Grid.Column="3"
+                    Width="Auto"
+                    Height="70"
+                    Margin="0,0,0,0"
+                    VerticalAlignment="Top"
+                    Background="#FF212330"
+                    BorderBrush="#FF797979"
+                    BorderThickness="1">
+                    <StackPanel HorizontalAlignment="Left" Orientation="Horizontal">
+                        <Button
+                            Width="52"
+                            Height="50"
+                            Margin="0,5,0,0"
+                            HorizontalAlignment="Left"
+                            VerticalAlignment="Top"
+                            Background="Transparent"
+                            BorderBrush="Gray"
+                            BorderThickness="0"
+                            CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}, Path=ToolTip}"
+                            Style="{StaticResource MaterialDesignFlatButton}"
+                            ToolTip="音量">
+                            <materialDesign:PackIcon
+                                Width="40"
+                                Height="40"
+                                Margin="-12,0"
+                                Foreground="#FF54575E"
+                                Kind="VolumeHigh" />
+                        </Button>
+
+                        <Slider
+                            Width="150"
+                            Margin="20,20,0,0"
+                            Foreground="#FF4ABAD0"
+                            IsMoveToPointEnabled="True"
+                            Maximum="100"
+                            Minimum="0"
+                            MouseMove="Slider_MouseMove"
+                            Style="{StaticResource BeautifySliderStyle}" />
+                        <TextBlock
+                            x:Name="txtValue"
+                            Margin="15,21,0,0"
+                            FontSize="16"
+                            Foreground="#FF797979"
+                            Text="0" />
+                    </StackPanel>
+                </Border>
+                <Border
+                    Grid.Row="1"
+                    Grid.Column="3"
+                    Width="Auto"
+                    Height="70"
+                    Margin="0,5,0,0"
+                    VerticalAlignment="Top"
+                    Background="#FF212330"
+                    BorderBrush="#FF797979"
+                    BorderThickness="1">
+                    <StackPanel HorizontalAlignment="Left" Orientation="Horizontal">
+                        <TextBlock
+                            Width="170"
+                            Margin="20,20,0,0"
+                            FontSize="16"
+                            Foreground="White"
+                            Text="{Binding BeltSpeed, Source={x:Static lang:LangProvider.Instance}}" />
+                        <TextBlock
+                            Margin="-10,20,0,0"
+                            HorizontalAlignment="Left"
+                            FontSize="16"
+                            Foreground="#FF4ABAD0"
+                            Text="5 m/s" />
+                    </StackPanel>
+                </Border>
+                <Border
+                    Grid.Row="1"
+                    Grid.Column="3"
+                    Width="280"
+                    Height="75"
+                    Margin="0,5,0,0"
+                    VerticalAlignment="Top"
+                    Background="#FF212330"
+                    BorderBrush="#FF797979"
+                    BorderThickness="1">
+                    <StackPanel HorizontalAlignment="Left" Orientation="Horizontal">
+                        <Border
+                            Height="75"
+                            VerticalAlignment="Top"
+                            Background="#FF212330"
+                            BorderBrush="#FF797979"
+                            BorderThickness="0,0,1,0">
+                            <StackPanel Orientation="Vertical">
+                                <TextBlock
+                                    Width="100"
+                                    Margin="50,10,5,0"
+                                    FontSize="16"
+                                    Foreground="White"
+                                    Text="{Binding CPUTemperature, Source={x:Static lang:LangProvider.Instance}}" />
+                                <TextBlock
+                                    Width="Auto"
+                                    Margin="50,10,0,0"
+                                    HorizontalAlignment="Left"
+                                    FontSize="16"
+                                    Foreground="#FF4ABAD0"
+                                    Text="24 ℃" />
+                            </StackPanel>
+                        </Border>
+                        <StackPanel Orientation="Vertical">
+                            <TextBlock
+                                Width="100"
+                                Margin="10,10,0,0"
+                                FontSize="16"
+                                Foreground="White"
+                                Text="{Binding GraphicsCardTemperature, Source={x:Static lang:LangProvider.Instance}}" />
+                            <TextBlock
+                                Margin="50,10,0,0"
+                                HorizontalAlignment="Left"
+                                FontSize="16"
+                                Foreground="#FF4ABAD0"
+                                Text="24 ℃" />
+                        </StackPanel>
+                    </StackPanel>
+                </Border>
+            </StackPanel>
+            <Border
+                Grid.Column="4"
+                Width="220"
+                Height="Auto"
+                Margin="5,1,0,1"
+                Background="#FF212330"
+                BorderBrush="#FF797979"
+                BorderThickness="1">
+                <Button
+                    Width="180"
+                    Height="180"
+                    Background="Red"
+                    BorderBrush="Transparent"
+                    BorderThickness="0"
+                    Content="{Binding EmergencyStop, Source={x:Static lang:LangProvider.Instance}}"
+                    FontFamily="微软雅黑"
+                    FontSize="60"
+                    Style="{StaticResource RoundedGelButton}" />
+                <!--<Button
+                    Width="100"
+                    Height="100"
+                    Background="Red"
+                    BorderBrush="Transparent"
+                    BorderThickness="0"
+                    Content="急停"
+                    Foreground="Transparent"
+                    Style="{StaticResource MaterialDesignFloatingActionAccentButton}" />-->
+            </Border>
+        </Grid>
+    </Grid>
+</UserControl>

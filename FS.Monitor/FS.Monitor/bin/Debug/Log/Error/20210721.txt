@@ -1,0 +1,7 @@
+2021-07-21 11:11:38.456 [Error] 向服务器发送心跳包出错：无法访问已释放的对象。
+对象名:“System.Net.Sockets.Socket”。
+2021-07-21 11:13:20.961 [Error] 无法访问已释放的对象。
+对象名:“System.Net.Sockets.Socket”。
+2021-07-21 11:13:21.210 [Error] 向服务器发送心跳包出错：无法访问已释放的对象。
+对象名:“System.Net.Sockets.Socket”。
+2021-07-21 11:32:14.184 [Error] 一个封锁操作被对 WSACancelBlockingCall 的调用中断。

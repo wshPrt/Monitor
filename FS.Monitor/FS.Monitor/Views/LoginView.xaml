@@ -1,0 +1,132 @@
+﻿<Window
+    x:Class="FS.Monitor.Views.LoginView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:behaviors="clr-namespace:FS.Monitor.Common.WindowClose"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:event="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
+    xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
+    xmlns:lang="clr-namespace:FS.Monitor.Common.Language"
+    xmlns:local="clr-namespace:FS.Monitor.Views"
+    xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:pass="clr-namespace:FS.Monitor.Common.Extended"
+    Width="480"
+    Height="430"
+    Background="#FF212330"
+    DataContext="{Binding Source={StaticResource Locator}, Path=Login}"
+    WindowStartupLocation="CenterScreen"
+    WindowStyle="None"
+    mc:Ignorable="d">
+    <!--  Background="{StaticResource MaterialDesignPaper}"  -->
+    <event:Interaction.Behaviors>
+        <behaviors:WindowCloseBehaviour Close="{Binding ToClose}" />
+    </event:Interaction.Behaviors>
+    <WindowChrome.WindowChrome>
+        <WindowChrome GlassFrameThickness="-1" />
+    </WindowChrome.WindowChrome>
+    <materialDesign:DialogHost Identifier="Root">
+        <Grid FocusManager.FocusedElement="{Binding ElementName=txtUser}">
+            <Grid Margin="20">
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+
+                <TextBlock
+                    Margin="20,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="35"
+                    FontWeight="Bold"
+                    Foreground="Gray"
+                    Text="{Binding LongitudinalTearingMonitoring, Source={x:Static lang:LangProvider.Instance}}" />
+                <!--  Command="{Binding ExecuteCommand}"  -->
+                <Button
+                    Height="60"
+                    HorizontalAlignment="Right"
+                    Click="Button_Click"
+                    CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}, Path=ToolTip}"
+                    Foreground="#FF49B7CE"
+                    Style="{StaticResource MaterialDesignFlatButton}"
+                    ToolTip="{Binding Close, Source={x:Static lang:LangProvider.Instance}}">
+                    <materialDesign:PackIcon
+                        Width="50"
+                        Height="50"
+                        Kind="Close" />
+                </Button>
+
+                <TextBox
+                    x:Name="txtUser"
+                    Grid.Row="1"
+                    Margin="20,0,20,0"
+                    VerticalAlignment="Center"
+                    materialDesign:HintAssist.FloatingScale="0.8"
+                    materialDesign:HintAssist.Foreground="#FF49B7CE"
+                    materialDesign:HintAssist.Hint="{Binding Account, Source={x:Static lang:LangProvider.Instance}}"
+                    FontSize="22"
+                    Foreground="Gray"
+                    Style="{StaticResource MaterialDesignFloatingHintTextBox}"
+                    Text="{Binding UserName}">
+                    <!--<TextBox.InputBindings>
+                        <KeyBinding Key="Enter" Command="{Binding Execute}" CommandParameter="{Binding ElementName=txtUser}"/>
+                    </TextBox.InputBindings>-->
+                </TextBox>
+
+                <PasswordBox
+                    x:Name="txtPassWord"
+                    Grid.Row="2"
+                    Margin="20,0,20,0"
+                    VerticalAlignment="Center"
+                    materialDesign:HintAssist.FloatingScale="0.8"
+                    materialDesign:HintAssist.Foreground="#FF49B7CE"
+                    materialDesign:HintAssist.Hint="{Binding Password, Source={x:Static lang:LangProvider.Instance}}"
+                    pass:PassWordExtensions.Password="{Binding PassWord, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                    FontSize="22"
+                    Foreground="Gray"
+                    Style="{StaticResource MaterialDesignFloatingHintPasswordBox}">
+                    <i:Interaction.Behaviors>
+                        <pass:PasswordBoxBehavior />
+                    </i:Interaction.Behaviors>
+                    <PasswordBox.InputBindings>
+                        <KeyBinding
+                            Key="Enter"
+                            Command="{Binding Execute}"
+                            CommandParameter="{Binding ElementName=txtPassWord}" />
+                    </PasswordBox.InputBindings>
+                </PasswordBox>
+
+                <TextBlock
+                    Grid.Row="2"
+                    Grid.RowSpan="2"
+                    Width="392"
+                    Margin="20,80,0,80"
+                    HorizontalAlignment="Left"
+                    FontSize="22"
+                    Foreground="Red"
+                    Text="{Binding Report}"
+                    TextAlignment="Center" />
+
+                <Button
+                    Grid.Row="3"
+                    Height="55"
+                    Margin="20,0"
+                    materialDesign:ButtonProgressAssist.IndicatorBackground="#FF49B7CE"
+                    materialDesign:ButtonProgressAssist.IndicatorForeground="Transparent"
+                    materialDesign:ButtonProgressAssist.IsIndicatorVisible="True"
+                    materialDesign:ButtonProgressAssist.Value="-1"
+                    Background="#FF49B7CE"
+                    BorderBrush="Transparent"
+                    BorderThickness="0"
+                    Command="{Binding Execute}"
+                    CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}, Path=Content}"
+                    Content="{Binding Login, Source={x:Static lang:LangProvider.Instance}}"
+                    FocusVisualStyle="{x:Null}"
+                    FontSize="23"
+                    Style="{StaticResource MaterialDesignRaisedButton}" />
+
+            </Grid>
+        </Grid>
+    </materialDesign:DialogHost>
+</Window>

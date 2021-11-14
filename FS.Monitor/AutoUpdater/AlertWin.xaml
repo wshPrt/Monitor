@@ -1,0 +1,91 @@
+﻿<Window
+    x:Class="AutoUpdater.AlertWin"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:AutoUpdater"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    x:Name="w"
+    Title="软件更新提醒"
+    Width="400"
+    Height="300"
+    AllowsTransparency="True"
+    Background="Transparent"
+    BorderThickness="24"
+    ResizeMode="NoResize"
+    WindowStyle="None">
+    <Window.Effect>
+        <DropShadowEffect
+            BlurRadius="24"
+            Direction="90"
+            ShadowDepth="1"
+            Color="#FF858484" />
+    </Window.Effect>
+
+    <Border Background="#fff" CornerRadius="5">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="40" />
+            </Grid.RowDefinitions>
+            <Border Background="#00BBF9" CornerRadius="5,5,0,0">
+                <TextBlock
+                    Margin="10,0,0,0"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Center"
+                    FontSize="16"
+                    Foreground="#fff"
+                    Text="更新提示"
+                    TextAlignment="Center" />
+            </Border>
+            <TextBlock
+                x:Name="txtMsg"
+                Grid.Row="1"
+                Margin="10,10,0,0"
+                VerticalAlignment="Center"
+                FontSize="18"
+                Text="更新成功是否现在启动？"
+                TextAlignment="Center" />
+            <StackPanel
+                Grid.Row="2"
+                HorizontalAlignment="Right"
+                Orientation="Horizontal">
+                <Border
+                    Width="80"
+                    Height="30"
+                    Margin="0,0,14,0"
+                    VerticalAlignment="Top"
+                    Background="#00BBF9"
+                    CornerRadius="5">
+                    <Button
+                        Name="btnStart"
+                        Background="Transparent"
+                        BorderThickness="0"
+                        Click="btnStart_Click"
+                        Content="立即启动"
+                        FontSize="14"
+                        Foreground="#FFF002" />
+                </Border>
+                <Border
+                    Grid.Column="1"
+                    Width="80"
+                    Height="30"
+                    Margin="0,0,14,0"
+                    VerticalAlignment="Top"
+                    Background="#E30000"
+                    CornerRadius="5">
+                    <Button
+                        Name="btnCancle"
+                        Background="Transparent"
+                        BorderThickness="0"
+                       Click="btnCancle_Click"
+                        Content="稍后启动"
+                        FontSize="14"
+                        Foreground="#FFF" />
+                </Border>
+            </StackPanel>
+        </Grid>
+
+    </Border>
+</Window>

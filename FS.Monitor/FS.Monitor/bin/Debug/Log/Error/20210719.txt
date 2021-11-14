@@ -1,0 +1,16 @@
+2021-07-19 09:33:06.378 [Error] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。 192.168.100.181:5000
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at FS.Monitor.Common.Scoket.SocketClientHelper.Connect() in D:\vsCode\FS.Monitor\FS.Monitor\Common\Scoket\SocketClientHelper.cs:line 52
+2021-07-19 09:57:45.441 [Error] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。 192.168.100.181:5000
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at FS.Monitor.Common.Scoket.SocketClientHelper.Connect() in D:\vsCode\FS.Monitor\FS.Monitor\Common\Scoket\SocketClientHelper.cs:line 52
+2021-07-19 10:01:11.859 [Error] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。 192.168.100.181:5000
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at FS.Monitor.Common.Scoket.SocketClientHelper.Connect() in D:\vsCode\FS.Monitor\FS.Monitor\Common\Scoket\SocketClientHelper.cs:line 52
+2021-07-19 10:04:21.024 [Error] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。 192.168.100.181:5000
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at FS.Monitor.Common.Scoket.SocketClientHelper.Connect() in D:\vsCode\FS.Monitor\FS.Monitor\Common\Scoket\SocketClientHelper.cs:line 52

@@ -1,0 +1,207 @@
+2021-07-14 19:24:19.816 [Error] 由于目标计算机积极拒绝，无法连接。 127.0.0.1:5000
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at FS.Monitor.Common.Scoket.SocketClientHelper.ConnectServer() in D:\vsCode\FS.Monitor\FS.Monitor\Common\Scoket\SocketClientHelper.cs:line 123
+2021-07-14 19:25:52.114 [Error] 由于目标计算机积极拒绝，无法连接。 127.0.0.1:5000
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at FS.Monitor.Common.Scoket.SocketClientHelper.ConnectServer() in D:\vsCode\FS.Monitor\FS.Monitor\Common\Scoket\SocketClientHelper.cs:line 123
+2021-07-14 19:26:59.882 [Error] 向一个无法连接的网络尝试了一个套接字操作。 169.254.251.173:5000
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at FS.Monitor.Common.Scoket.SocketClientHelper.ConnectServer() in D:\vsCode\FS.Monitor\FS.Monitor\Common\Scoket\SocketClientHelper.cs:line 123
+2021-07-14 19:37:06.180 [Error] Object reference not set to an instance of an object.
+   at FS.Monitor.Common.Scoket.SocketClientHelper.ReleaseServerSocket() in D:\vsCode\FS.Monitor\FS.Monitor\Common\Scoket\SocketClientHelper.cs:line 225
+   at FS.Monitor.Common.Scoket.SocketClientHelper.CheckServer(Object sender, ElapsedEventArgs e) in D:\vsCode\FS.Monitor\FS.Monitor\Common\Scoket\SocketClientHelper.cs:line 187
+2021-07-14 19:42:12.493 [Error] Object reference not set to an instance of an object.
+   at FS.Monitor.Common.Scoket.SocketClientHelper.ReleaseServerSocket() in D:\vsCode\FS.Monitor\FS.Monitor\Common\Scoket\SocketClientHelper.cs:line 225
+   at FS.Monitor.Common.Scoket.SocketClientHelper.CheckServer(Object sender, ElapsedEventArgs e) in D:\vsCode\FS.Monitor\FS.Monitor\Common\Scoket\SocketClientHelper.cs:line 187
+2021-07-14 20:09:31.693 [Error] 由于目标计算机积极拒绝，无法连接。 169.254.251.173:5000
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at FS.Monitor.Common.Scoket.SocketClientHelper.ConnectServer() in D:\vsCode\FS.Monitor\FS.Monitor\Common\Scoket\SocketClientHelper.cs:line 123
+2021-07-14 20:12:03.925 [Error] 处理接收的数据包 异常：Object reference not set to an instance of an object.
+   at FS.Monitor.Common.Scoket.SocketClientHelper.ReleaseServerSocket() in D:\vsCode\FS.Monitor\FS.Monitor\Common\Scoket\SocketClientHelper.cs:line 225
+   at FS.Monitor.Common.Scoket.SocketClientHelper.ReceiveData(Socket socket, SocketAsyncEventArgs e) in D:\vsCode\FS.Monitor\FS.Monitor\Common\Scoket\SocketClientHelper.cs:line 356
+2021-07-14 20:12:03.926 [Error] 向服务器发送心跳包出错：Index was outside the bounds of the array.
+2021-07-14 20:12:03.928 [Error] 向一个无法连接的网络尝试了一个套接字操作。 169.254.251.173:5000
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at FS.Monitor.Common.Scoket.SocketClientHelper.ConnectServer() in D:\vsCode\FS.Monitor\FS.Monitor\Common\Scoket\SocketClientHelper.cs:line 123
+2021-07-14 20:12:13.941 [Error] 向服务器发送心跳包出错：Index was outside the bounds of the array.
+2021-07-14 20:12:23.949 [Error] 向服务器发送心跳包出错：Index was outside the bounds of the array.
+2021-07-14 20:12:33.956 [Error] 向服务器发送心跳包出错：Index was outside the bounds of the array.
+2021-07-14 20:12:43.971 [Error] 向服务器发送心跳包出错：Index was outside the bounds of the array.
+2021-07-14 20:12:53.983 [Error] 向服务器发送心跳包出错：Index was outside the bounds of the array.
+2021-07-14 20:13:03.991 [Error] 向服务器发送心跳包出错：Index was outside the bounds of the array.
+2021-07-14 20:13:14.001 [Error] 向服务器发送心跳包出错：Index was outside the bounds of the array.
+2021-07-14 20:13:24.009 [Error] 向服务器发送心跳包出错：Index was outside the bounds of the array.
+2021-07-14 20:13:34.016 [Error] 向服务器发送心跳包出错：Index was outside the bounds of the array.
+2021-07-14 20:13:44.024 [Error] 向服务器发送心跳包出错：Index was outside the bounds of the array.
+2021-07-14 20:13:54.031 [Error] 向服务器发送心跳包出错：Index was outside the bounds of the array.
+2021-07-14 20:14:04.038 [Error] 向服务器发送心跳包出错：Index was outside the bounds of the array.
+2021-07-14 20:14:14.049 [Error] 向服务器发送心跳包出错：Index was outside the bounds of the array.
+2021-07-14 20:14:24.063 [Error] 向服务器发送心跳包出错：Index was outside the bounds of the array.
+2021-07-14 20:14:34.070 [Error] 向服务器发送心跳包出错：Index was outside the bounds of the array.
+2021-07-14 20:14:44.079 [Error] 向服务器发送心跳包出错：Index was outside the bounds of the array.
+2021-07-14 20:14:54.100 [Error] 向服务器发送心跳包出错：Index was outside the bounds of the array.
+2021-07-14 20:24:34.781 [Error] 向服务器发送心跳包出错：Index was outside the bounds of the array.
+2021-07-14 20:24:44.788 [Error] 向服务器发送心跳包出错：Index was outside the bounds of the array.
+2021-07-14 20:24:54.796 [Error] 向服务器发送心跳包出错：Index was outside the bounds of the array.
+2021-07-14 20:25:04.822 [Error] 向服务器发送心跳包出错：Index was outside the bounds of the array.
+2021-07-14 20:25:52.200 [Error] 向服务器发送心跳包出错：Index was outside the bounds of the array.
+2021-07-14 20:52:23.441 [Error] 处理接收的数据包 异常：Object reference not set to an instance of an object.
+   at FS.Monitor.Common.Scoket.SocketClientHelper.ReleaseServerSocket() in D:\vsCode\FS.Monitor\FS.Monitor\Common\Scoket\SocketClientHelper.cs:line 225
+   at FS.Monitor.Common.Scoket.SocketClientHelper.ReceiveData(Socket socket, SocketAsyncEventArgs e) in D:\vsCode\FS.Monitor\FS.Monitor\Common\Scoket\SocketClientHelper.cs:line 356
+2021-07-14 21:06:55.558 [Error] 向一个无法连接的网络尝试了一个套接字操作。 169.254.251.173:5000
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at FS.Monitor.Common.Scoket.SocketClientHelper.ConnectServer() in D:\vsCode\FS.Monitor\FS.Monitor\Common\Scoket\SocketClientHelper.cs:line 123
+2021-07-14 21:06:58.566 [Error] 向一个无法连接的网络尝试了一个套接字操作。 169.254.251.173:5000
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at FS.Monitor.Common.Scoket.SocketClientHelper.ConnectServer() in D:\vsCode\FS.Monitor\FS.Monitor\Common\Scoket\SocketClientHelper.cs:line 123
+2021-07-14 21:07:01.574 [Error] 向一个无法连接的网络尝试了一个套接字操作。 169.254.251.173:5000
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at FS.Monitor.Common.Scoket.SocketClientHelper.ConnectServer() in D:\vsCode\FS.Monitor\FS.Monitor\Common\Scoket\SocketClientHelper.cs:line 123
+2021-07-14 21:17:20.455 [Error] 远程主机强迫关闭了一个现有的连接。
+   at System.Net.Sockets.Socket.Send(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   at System.Net.Sockets.Socket.Send(Byte[] buffer)
+   at FS.Monitor.Common.Scoket.SocketHelper.Send(Socket socket, Byte[] data) in D:\vsCode\FS.Monitor\FS.Monitor\Common\Scoket\SocketHelper.cs:line 36
+2021-07-14 21:32:10.355 [Error] Object reference not set to an instance of an object.
+   at FS.Monitor.Common.Scoket.SocketClientHelper.ReleaseServerSocket()
+   at FS.Monitor.Common.Scoket.SocketClientHelper.CheckServer(Object sender, ElapsedEventArgs e)
+2021-07-14 22:10:14.450 [Error] 由于目标计算机积极拒绝，无法连接。 169.254.251.173:5000
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at FS.Monitor.Common.Scoket.SocketClientHelper.ConnectServer() in D:\vsCode\FS.Monitor\FS.Monitor\Common\Scoket\SocketClientHelper.cs:line 124
+2021-07-14 22:10:16.482 [Error] 由于目标计算机积极拒绝，无法连接。 169.254.251.173:5000
+   at System.Net.Sockets.Socket.Connect(IPAddress[] addresses, Int32 port)
+   at System.Net.Sockets.Socket.Connect(String host, Int32 port)
+   at FS.Monitor.Common.Scoket.Message.TSocketClient..ctor(String ip, Int32 port) in D:\vsCode\FS.Monitor\FS.Monitor\Common\Scoket\Message\TSocketClient.cs:line 26
+   at FS.Monitor.Common.Scoket.SocketHelper.Send(Socket socket, Byte[] data) in D:\vsCode\FS.Monitor\FS.Monitor\Common\Scoket\SocketHelper.cs:line 29
+2021-07-14 22:10:18.505 [Error] 由于目标计算机积极拒绝，无法连接。 169.254.251.173:5000
+   at System.Net.Sockets.Socket.Connect(IPAddress[] addresses, Int32 port)
+   at System.Net.Sockets.Socket.Connect(String host, Int32 port)
+   at FS.Monitor.Common.Scoket.Message.TSocketClient..ctor(String ip, Int32 port) in D:\vsCode\FS.Monitor\FS.Monitor\Common\Scoket\Message\TSocketClient.cs:line 26
+   at FS.Monitor.Common.Scoket.SocketHelper.Send(Socket socket, Byte[] data) in D:\vsCode\FS.Monitor\FS.Monitor\Common\Scoket\SocketHelper.cs:line 29
+2021-07-14 22:10:20.515 [Error] 由于目标计算机积极拒绝，无法连接。 169.254.251.173:5000
+   at System.Net.Sockets.Socket.Connect(IPAddress[] addresses, Int32 port)
+   at System.Net.Sockets.Socket.Connect(String host, Int32 port)
+   at FS.Monitor.Common.Scoket.Message.TSocketClient..ctor(String ip, Int32 port) in D:\vsCode\FS.Monitor\FS.Monitor\Common\Scoket\Message\TSocketClient.cs:line 26
+   at FS.Monitor.Common.Scoket.SocketHelper.Send(Socket socket, Byte[] data) in D:\vsCode\FS.Monitor\FS.Monitor\Common\Scoket\SocketHelper.cs:line 29
+2021-07-14 22:10:22.523 [Error] 由于目标计算机积极拒绝，无法连接。 169.254.251.173:5000
+   at System.Net.Sockets.Socket.Connect(IPAddress[] addresses, Int32 port)
+   at System.Net.Sockets.Socket.Connect(String host, Int32 port)
+   at FS.Monitor.Common.Scoket.Message.TSocketClient..ctor(String ip, Int32 port) in D:\vsCode\FS.Monitor\FS.Monitor\Common\Scoket\Message\TSocketClient.cs:line 26
+   at FS.Monitor.Common.Scoket.SocketHelper.Send(Socket socket, Byte[] data) in D:\vsCode\FS.Monitor\FS.Monitor\Common\Scoket\SocketHelper.cs:line 29
+2021-07-14 22:10:24.538 [Error] 由于目标计算机积极拒绝，无法连接。 169.254.251.173:5000
+   at System.Net.Sockets.Socket.Connect(IPAddress[] addresses, Int32 port)
+   at System.Net.Sockets.Socket.Connect(String host, Int32 port)
+   at FS.Monitor.Common.Scoket.Message.TSocketClient..ctor(String ip, Int32 port) in D:\vsCode\FS.Monitor\FS.Monitor\Common\Scoket\Message\TSocketClient.cs:line 26
+   at FS.Monitor.Common.Scoket.SocketHelper.Send(Socket socket, Byte[] data) in D:\vsCode\FS.Monitor\FS.Monitor\Common\Scoket\SocketHelper.cs:line 29
+2021-07-14 22:10:26.547 [Error] 由于目标计算机积极拒绝，无法连接。 169.254.251.173:5000
+   at System.Net.Sockets.Socket.Connect(IPAddress[] addresses, Int32 port)
+   at System.Net.Sockets.Socket.Connect(String host, Int32 port)
+   at FS.Monitor.Common.Scoket.Message.TSocketClient..ctor(String ip, Int32 port) in D:\vsCode\FS.Monitor\FS.Monitor\Common\Scoket\Message\TSocketClient.cs:line 26
+   at FS.Monitor.Common.Scoket.SocketHelper.Send(Socket socket, Byte[] data) in D:\vsCode\FS.Monitor\FS.Monitor\Common\Scoket\SocketHelper.cs:line 29
+2021-07-14 22:10:28.557 [Error] 由于目标计算机积极拒绝，无法连接。 169.254.251.173:5000
+   at System.Net.Sockets.Socket.Connect(IPAddress[] addresses, Int32 port)
+   at System.Net.Sockets.Socket.Connect(String host, Int32 port)
+   at FS.Monitor.Common.Scoket.Message.TSocketClient..ctor(String ip, Int32 port) in D:\vsCode\FS.Monitor\FS.Monitor\Common\Scoket\Message\TSocketClient.cs:line 26
+   at FS.Monitor.Common.Scoket.SocketHelper.Send(Socket socket, Byte[] data) in D:\vsCode\FS.Monitor\FS.Monitor\Common\Scoket\SocketHelper.cs:line 29
+2021-07-14 22:10:30.567 [Error] 由于目标计算机积极拒绝，无法连接。 169.254.251.173:5000
+   at System.Net.Sockets.Socket.Connect(IPAddress[] addresses, Int32 port)
+   at System.Net.Sockets.Socket.Connect(String host, Int32 port)
+   at FS.Monitor.Common.Scoket.Message.TSocketClient..ctor(String ip, Int32 port) in D:\vsCode\FS.Monitor\FS.Monitor\Common\Scoket\Message\TSocketClient.cs:line 26
+   at FS.Monitor.Common.Scoket.SocketHelper.Send(Socket socket, Byte[] data) in D:\vsCode\FS.Monitor\FS.Monitor\Common\Scoket\SocketHelper.cs:line 29
+2021-07-14 22:10:32.577 [Error] 由于目标计算机积极拒绝，无法连接。 169.254.251.173:5000
+   at System.Net.Sockets.Socket.Connect(IPAddress[] addresses, Int32 port)
+   at System.Net.Sockets.Socket.Connect(String host, Int32 port)
+   at FS.Monitor.Common.Scoket.Message.TSocketClient..ctor(String ip, Int32 port) in D:\vsCode\FS.Monitor\FS.Monitor\Common\Scoket\Message\TSocketClient.cs:line 26
+   at FS.Monitor.Common.Scoket.SocketHelper.Send(Socket socket, Byte[] data) in D:\vsCode\FS.Monitor\FS.Monitor\Common\Scoket\SocketHelper.cs:line 29
+2021-07-14 22:10:34.587 [Error] 由于目标计算机积极拒绝，无法连接。 169.254.251.173:5000
+   at System.Net.Sockets.Socket.Connect(IPAddress[] addresses, Int32 port)
+   at System.Net.Sockets.Socket.Connect(String host, Int32 port)
+   at FS.Monitor.Common.Scoket.Message.TSocketClient..ctor(String ip, Int32 port) in D:\vsCode\FS.Monitor\FS.Monitor\Common\Scoket\Message\TSocketClient.cs:line 26
+   at FS.Monitor.Common.Scoket.SocketHelper.Send(Socket socket, Byte[] data) in D:\vsCode\FS.Monitor\FS.Monitor\Common\Scoket\SocketHelper.cs:line 29
+2021-07-14 22:10:36.596 [Error] 由于目标计算机积极拒绝，无法连接。 169.254.251.173:5000
+   at System.Net.Sockets.Socket.Connect(IPAddress[] addresses, Int32 port)
+   at System.Net.Sockets.Socket.Connect(String host, Int32 port)
+   at FS.Monitor.Common.Scoket.Message.TSocketClient..ctor(String ip, Int32 port) in D:\vsCode\FS.Monitor\FS.Monitor\Common\Scoket\Message\TSocketClient.cs:line 26
+   at FS.Monitor.Common.Scoket.SocketHelper.Send(Socket socket, Byte[] data) in D:\vsCode\FS.Monitor\FS.Monitor\Common\Scoket\SocketHelper.cs:line 29
+2021-07-14 22:10:38.606 [Error] 由于目标计算机积极拒绝，无法连接。 169.254.251.173:5000
+   at System.Net.Sockets.Socket.Connect(IPAddress[] addresses, Int32 port)
+   at System.Net.Sockets.Socket.Connect(String host, Int32 port)
+   at FS.Monitor.Common.Scoket.Message.TSocketClient..ctor(String ip, Int32 port) in D:\vsCode\FS.Monitor\FS.Monitor\Common\Scoket\Message\TSocketClient.cs:line 26
+   at FS.Monitor.Common.Scoket.SocketHelper.Send(Socket socket, Byte[] data) in D:\vsCode\FS.Monitor\FS.Monitor\Common\Scoket\SocketHelper.cs:line 29
+2021-07-14 22:10:40.616 [Error] 由于目标计算机积极拒绝，无法连接。 169.254.251.173:5000
+   at System.Net.Sockets.Socket.Connect(IPAddress[] addresses, Int32 port)
+   at System.Net.Sockets.Socket.Connect(String host, Int32 port)
+   at FS.Monitor.Common.Scoket.Message.TSocketClient..ctor(String ip, Int32 port) in D:\vsCode\FS.Monitor\FS.Monitor\Common\Scoket\Message\TSocketClient.cs:line 26
+   at FS.Monitor.Common.Scoket.SocketHelper.Send(Socket socket, Byte[] data) in D:\vsCode\FS.Monitor\FS.Monitor\Common\Scoket\SocketHelper.cs:line 29
+2021-07-14 22:10:42.626 [Error] 由于目标计算机积极拒绝，无法连接。 169.254.251.173:5000
+   at System.Net.Sockets.Socket.Connect(IPAddress[] addresses, Int32 port)
+   at System.Net.Sockets.Socket.Connect(String host, Int32 port)
+   at FS.Monitor.Common.Scoket.Message.TSocketClient..ctor(String ip, Int32 port) in D:\vsCode\FS.Monitor\FS.Monitor\Common\Scoket\Message\TSocketClient.cs:line 26
+   at FS.Monitor.Common.Scoket.SocketHelper.Send(Socket socket, Byte[] data) in D:\vsCode\FS.Monitor\FS.Monitor\Common\Scoket\SocketHelper.cs:line 29
+2021-07-14 22:10:44.635 [Error] 由于目标计算机积极拒绝，无法连接。 169.254.251.173:5000
+   at System.Net.Sockets.Socket.Connect(IPAddress[] addresses, Int32 port)
+   at System.Net.Sockets.Socket.Connect(String host, Int32 port)
+   at FS.Monitor.Common.Scoket.Message.TSocketClient..ctor(String ip, Int32 port) in D:\vsCode\FS.Monitor\FS.Monitor\Common\Scoket\Message\TSocketClient.cs:line 26
+   at FS.Monitor.Common.Scoket.SocketHelper.Send(Socket socket, Byte[] data) in D:\vsCode\FS.Monitor\FS.Monitor\Common\Scoket\SocketHelper.cs:line 29
+2021-07-14 22:10:46.644 [Error] 由于目标计算机积极拒绝，无法连接。 169.254.251.173:5000
+   at System.Net.Sockets.Socket.Connect(IPAddress[] addresses, Int32 port)
+   at System.Net.Sockets.Socket.Connect(String host, Int32 port)
+   at FS.Monitor.Common.Scoket.Message.TSocketClient..ctor(String ip, Int32 port) in D:\vsCode\FS.Monitor\FS.Monitor\Common\Scoket\Message\TSocketClient.cs:line 26
+   at FS.Monitor.Common.Scoket.SocketHelper.Send(Socket socket, Byte[] data) in D:\vsCode\FS.Monitor\FS.Monitor\Common\Scoket\SocketHelper.cs:line 29
+2021-07-14 22:10:48.652 [Error] 由于目标计算机积极拒绝，无法连接。 169.254.251.173:5000
+   at System.Net.Sockets.Socket.Connect(IPAddress[] addresses, Int32 port)
+   at System.Net.Sockets.Socket.Connect(String host, Int32 port)
+   at FS.Monitor.Common.Scoket.Message.TSocketClient..ctor(String ip, Int32 port) in D:\vsCode\FS.Monitor\FS.Monitor\Common\Scoket\Message\TSocketClient.cs:line 26
+   at FS.Monitor.Common.Scoket.SocketHelper.Send(Socket socket, Byte[] data) in D:\vsCode\FS.Monitor\FS.Monitor\Common\Scoket\SocketHelper.cs:line 29
+2021-07-14 22:10:53.731 [Error] 由于目标计算机积极拒绝，无法连接。 169.254.251.173:5000
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at FS.Monitor.Common.Scoket.SocketClientHelper.ConnectServer() in D:\vsCode\FS.Monitor\FS.Monitor\Common\Scoket\SocketClientHelper.cs:line 124
+2021-07-14 22:10:55.748 [Error] 由于目标计算机积极拒绝，无法连接。 169.254.251.173:5000
+   at System.Net.Sockets.Socket.Connect(IPAddress[] addresses, Int32 port)
+   at System.Net.Sockets.Socket.Connect(String host, Int32 port)
+   at FS.Monitor.Common.Scoket.Message.TSocketClient..ctor(String ip, Int32 port) in D:\vsCode\FS.Monitor\FS.Monitor\Common\Scoket\Message\TSocketClient.cs:line 26
+   at FS.Monitor.Common.Scoket.SocketHelper.Send(Socket socket, Byte[] data) in D:\vsCode\FS.Monitor\FS.Monitor\Common\Scoket\SocketHelper.cs:line 29
+2021-07-14 22:10:57.760 [Error] 由于目标计算机积极拒绝，无法连接。 169.254.251.173:5000
+   at System.Net.Sockets.Socket.Connect(IPAddress[] addresses, Int32 port)
+   at System.Net.Sockets.Socket.Connect(String host, Int32 port)
+   at FS.Monitor.Common.Scoket.Message.TSocketClient..ctor(String ip, Int32 port) in D:\vsCode\FS.Monitor\FS.Monitor\Common\Scoket\Message\TSocketClient.cs:line 26
+   at FS.Monitor.Common.Scoket.SocketHelper.Send(Socket socket, Byte[] data) in D:\vsCode\FS.Monitor\FS.Monitor\Common\Scoket\SocketHelper.cs:line 29
+2021-07-14 22:10:59.991 [Error] 由于目标计算机积极拒绝，无法连接。 169.254.251.173:5000
+   at System.Net.Sockets.Socket.Connect(IPAddress[] addresses, Int32 port)
+   at System.Net.Sockets.Socket.Connect(String host, Int32 port)
+   at FS.Monitor.Common.Scoket.Message.TSocketClient..ctor(String ip, Int32 port) in D:\vsCode\FS.Monitor\FS.Monitor\Common\Scoket\Message\TSocketClient.cs:line 26
+   at FS.Monitor.Common.Scoket.SocketHelper.Send(Socket socket, Byte[] data) in D:\vsCode\FS.Monitor\FS.Monitor\Common\Scoket\SocketHelper.cs:line 29
+2021-07-14 22:11:02.005 [Error] 由于目标计算机积极拒绝，无法连接。 169.254.251.173:5000
+   at System.Net.Sockets.Socket.Connect(IPAddress[] addresses, Int32 port)
+   at System.Net.Sockets.Socket.Connect(String host, Int32 port)
+   at FS.Monitor.Common.Scoket.Message.TSocketClient..ctor(String ip, Int32 port) in D:\vsCode\FS.Monitor\FS.Monitor\Common\Scoket\Message\TSocketClient.cs:line 26
+   at FS.Monitor.Common.Scoket.SocketHelper.Send(Socket socket, Byte[] data) in D:\vsCode\FS.Monitor\FS.Monitor\Common\Scoket\SocketHelper.cs:line 29
+2021-07-14 22:11:04.015 [Error] 由于目标计算机积极拒绝，无法连接。 169.254.251.173:5000
+   at System.Net.Sockets.Socket.Connect(IPAddress[] addresses, Int32 port)
+   at System.Net.Sockets.Socket.Connect(String host, Int32 port)
+   at FS.Monitor.Common.Scoket.Message.TSocketClient..ctor(String ip, Int32 port) in D:\vsCode\FS.Monitor\FS.Monitor\Common\Scoket\Message\TSocketClient.cs:line 26
+   at FS.Monitor.Common.Scoket.SocketHelper.Send(Socket socket, Byte[] data) in D:\vsCode\FS.Monitor\FS.Monitor\Common\Scoket\SocketHelper.cs:line 29
+2021-07-14 22:11:06.024 [Error] 由于目标计算机积极拒绝，无法连接。 169.254.251.173:5000
+   at System.Net.Sockets.Socket.Connect(IPAddress[] addresses, Int32 port)
+   at System.Net.Sockets.Socket.Connect(String host, Int32 port)
+   at FS.Monitor.Common.Scoket.Message.TSocketClient..ctor(String ip, Int32 port) in D:\vsCode\FS.Monitor\FS.Monitor\Common\Scoket\Message\TSocketClient.cs:line 26
+   at FS.Monitor.Common.Scoket.SocketHelper.Send(Socket socket, Byte[] data) in D:\vsCode\FS.Monitor\FS.Monitor\Common\Scoket\SocketHelper.cs:line 29
+2021-07-14 22:11:58.207 [Error] 向一个无法连接的网络尝试了一个套接字操作。 169.254.251.173:5000
+   at System.Net.Sockets.Socket.Connect(IPAddress[] addresses, Int32 port)
+   at System.Net.Sockets.Socket.Connect(String host, Int32 port)
+   at FS.Monitor.Common.Scoket.Message.TSocketClient..ctor(String ip, Int32 port) in D:\vsCode\FS.Monitor\FS.Monitor\Common\Scoket\Message\TSocketClient.cs:line 26
+   at FS.Monitor.Common.Scoket.SocketHelper.Send(Socket socket, Byte[] data) in D:\vsCode\FS.Monitor\FS.Monitor\Common\Scoket\SocketHelper.cs:line 29
+2021-07-14 22:11:59.227 [Error] 向一个无法连接的网络尝试了一个套接字操作。 169.254.251.173:5000
+   at System.Net.Sockets.Socket.Connect(IPAddress[] addresses, Int32 port)
+   at System.Net.Sockets.Socket.Connect(String host, Int32 port)
+   at FS.Monitor.Common.Scoket.Message.TSocketClient..ctor(String ip, Int32 port) in D:\vsCode\FS.Monitor\FS.Monitor\Common\Scoket\Message\TSocketClient.cs:line 26
+   at FS.Monitor.Common.Scoket.SocketHelper.Send(Socket socket, Byte[] data) in D:\vsCode\FS.Monitor\FS.Monitor\Common\Scoket\SocketHelper.cs:line 29

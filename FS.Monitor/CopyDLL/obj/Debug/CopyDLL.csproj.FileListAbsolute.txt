@@ -1,0 +1,10 @@
+D:\vsCode\FS.Monitor\CopyDLL\bin\Debug\CopyDLL.exe.config
+D:\vsCode\FS.Monitor\CopyDLL\bin\Debug\CopyDLL.exe
+D:\vsCode\FS.Monitor\CopyDLL\bin\Debug\CopyDLL.pdb
+D:\vsCode\FS.Monitor\CopyDLL\bin\Debug\ICSharpCode.SharpZipLib.dll
+D:\vsCode\FS.Monitor\CopyDLL\obj\Debug\CopyDLL.csproj.CoreCompileInputs.cache
+D:\vsCode\FS.Monitor\CopyDLL\obj\Debug\CopyDLL.csproj.CopyComplete
+D:\vsCode\FS.Monitor\CopyDLL\obj\Debug\CopyDLL.exe
+D:\vsCode\FS.Monitor\CopyDLL\obj\Debug\CopyDLL.pdb
+D:\vsCode\FS.Monitor\CopyDLL\bin\Debug\DLL\ICSharpCode.SharpZipLib.dll
+D:\vsCode\FS.Monitor\CopyDLL\obj\Debug\CopyDLL.csproj.AssemblyReference.cache

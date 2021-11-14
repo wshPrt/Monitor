@@ -1,0 +1,109 @@
+﻿<Window
+    x:Class="FS.Monitor.Views.MsgBoxView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:FS.Monitor.Views"
+    xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:system="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:vc="clr-namespace:FS.Monitor.Common.Concover"
+    xmlns:wpf="clr-namespace:MaterialDesignThemes.Wpf;assembly=MaterialDesignThemes.Wpf"
+    Title="MsgBox"
+    Width="400"
+    Height="220"
+    Background="#FF212330"
+    MouseMove="Window_MouseMove"
+    ResizeMode="NoResize"
+    ShowActivated="False"
+    Topmost="True"
+    WindowStartupLocation="CenterScreen"
+    WindowStyle="None"
+    mc:Ignorable="d">
+    <Window.Resources>
+        <vc:VisibilityConverter x:Key="vis" />
+    </Window.Resources>
+    <Grid>
+        <Border>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="25" />
+                    <RowDefinition />
+                    <RowDefinition Height="40" />
+                </Grid.RowDefinitions>
+                <materialDesign:ColorZone
+                    Padding="40"
+                    Background="#FF4ABAD0"
+                    Mode="PrimaryMid" />
+                <TextBlock
+                    Margin="5,0,0,0"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Center"
+                    FontSize="15"
+                    Foreground="White"
+                    Text="消息窗口" />
+                <StackPanel Grid.Row="1" Orientation="Horizontal">
+
+                    <materialDesign:PackIcon
+                        Width="30"
+                        Height="30"
+                        Margin="20,0,0,0"
+                        VerticalAlignment="Center"
+                        Foreground="{Binding Color}"
+                        Kind="AccessPoint" />
+
+                    <ScrollViewer
+                        Margin="15,40,0,40"
+                        HorizontalScrollBarVisibility="Auto"
+                        VerticalScrollBarVisibility="Auto">
+                        <StackPanel
+                            Width="300"
+                            HorizontalAlignment="Left"
+                            VerticalAlignment="Center">
+                            <TextBlock
+                                x:Name="msg"
+                                HorizontalAlignment="Left"
+                                VerticalAlignment="Center"
+                                FontFamily="幼圆"
+                                FontSize="18"
+                                Foreground="#737373"
+                                Text="{Binding Msg}"
+                                TextWrapping="Wrap" />
+                        </StackPanel>
+                    </ScrollViewer>
+                </StackPanel>
+                <StackPanel
+                    Grid.Row="2"
+                    Margin="0,-20,0,0"
+                    HorizontalAlignment="Right"
+                    VerticalAlignment="Top"
+                    Orientation="Horizontal">
+                    <Button
+                        Width="100"
+                        Margin="10,0,30,0"
+                        materialDesign:ButtonAssist.CornerRadius="5"
+                        materialDesign:ButtonProgressAssist.IndicatorBackground="#FF49B7CE"
+                        materialDesign:ButtonProgressAssist.IndicatorForeground="Transparent"
+                        materialDesign:ButtonProgressAssist.IsIndicatorVisible="True"
+                        materialDesign:ButtonProgressAssist.Value="-1"
+                        Background="#FF4ABAD0"
+                        Click="Button_Click"
+                        Style="{StaticResource MaterialDesignRaisedButton}"
+                        ToolTip="确认">
+                        <TextBlock Foreground="White" Text="确定" />
+                    </Button>
+                    <Button
+                        Width="100"
+                        Margin="0,0,10,0"
+                        materialDesign:ButtonAssist.CornerRadius="5"
+                        Background="LightGray"
+                        BorderBrush="Transparent"
+                        Click="Button_Click_1"
+                        Style="{StaticResource MaterialDesignRaisedButton}">
+                        <TextBlock Foreground="White" Text="取消" />
+                    </Button>
+                </StackPanel>
+            </Grid>
+        </Border>
+    </Grid>
+</Window>

@@ -1,0 +1,178 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <!--  ScrollViewer样式  -->
+    <Style TargetType="{x:Type ScrollViewer}">
+        <Setter Property="OverridesDefaultStyle" Value="True" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type ScrollViewer}">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+                        <Border
+                            Grid.Row="0"
+                            Grid.Column="0"
+                            VerticalAlignment="Top">
+                            <ScrollContentPresenter CanContentScroll="True" Content="{TemplateBinding ScrollViewer.Content}" />
+                        </Border>
+                        <ScrollBar
+                            Name="PART_VerticalScrollBar"
+                            Grid.Row="0"
+                            Grid.Column="1"
+                            Maximum="{TemplateBinding ScrollViewer.ScrollableHeight}"
+                            Minimum="0"
+                            Orientation="Vertical"
+                            ViewportSize="{TemplateBinding ScrollViewer.ViewportHeight}"
+                            Visibility="{TemplateBinding ScrollViewer.ComputedVerticalScrollBarVisibility}"
+                            Value="{TemplateBinding ScrollViewer.VerticalOffset}" />
+
+                        <ScrollBar
+                            Name="PART_HorizontalScrollBar"
+                            Grid.Row="1"
+                            Grid.Column="1"
+                            Maximum="{TemplateBinding ScrollViewer.ScrollableWidth}"
+                            Minimum="0"
+                            Orientation="Horizontal"
+                            ViewportSize="{TemplateBinding ScrollViewer.ViewportWidth}"
+                            Visibility="{TemplateBinding ScrollViewer.ComputedHorizontalScrollBarVisibility}"
+                            Value="{TemplateBinding ScrollViewer.HorizontalOffset}" />
+
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <!--</Snippet1>-->
+
+    <!--  滚动条两端箭头按钮  -->
+    <Style x:Key="ScrollBar_LineButton" TargetType="{x:Type RepeatButton}">
+        <Setter Property="OverridesDefaultStyle" Value="true" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type RepeatButton}">
+
+                    <Path
+                        x:Name="arrow"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        Data="{Binding Path=Content, RelativeSource={RelativeSource TemplatedParent}}"
+                        Fill="Transparent"
+                        Stroke="#42464d" />
+
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="true">
+                            <Setter TargetName="arrow" Property="Stroke" Value="White" />
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="true">
+                            <Setter TargetName="arrow" Property="Stroke" Value="White" />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="ScrollBar_PageButton" TargetType="{x:Type RepeatButton}">
+        <Setter Property="OverridesDefaultStyle" Value="true" />
+        <Setter Property="IsTabStop" Value="false" />
+        <Setter Property="Focusable" Value="false" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type RepeatButton}">
+                    <Rectangle Fill="Transparent" />
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!--  滚动条  -->
+    <Style x:Key="ScrollBar_Thumb" TargetType="{x:Type Thumb}">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Thumb}">
+                    <Border
+                        Width="12"
+                        Background="Transparent"
+                        BorderBrush="#42464d"
+                        BorderThickness="1"
+                        CornerRadius="3" />
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <!--  ScrollBar Style  -->
+    <Style TargetType="{x:Type ScrollBar}">
+        <Setter Property="Stylus.IsFlicksEnabled" Value="false" />
+        <Setter Property="Background" Value="Transparent" />
+        <Setter Property="Width" Value="14" />
+        <Setter Property="MinWidth" Value="14" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type ScrollBar}">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="16" />
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="16" />
+                        </Grid.RowDefinitions>
+                        <RepeatButton
+                            Grid.Row="0"
+                            Command="ScrollBar.LineUpCommand"
+                            Content="M 0 10 L 6 0 L 12 10 Z"
+                            Style="{DynamicResource ScrollBar_LineButton}" />
+
+                        <Track
+                            Name="PART_Track"
+                            Grid.Row="1"
+                            IsDirectionReversed="true">
+                            <Track.DecreaseRepeatButton>
+                                <RepeatButton Style="{StaticResource ScrollBar_PageButton}" />
+                            </Track.DecreaseRepeatButton>
+                            <Track.Thumb>
+                                <Thumb MinHeight="4" Style="{StaticResource ScrollBar_Thumb}" />
+                            </Track.Thumb>
+                            <Track.IncreaseRepeatButton>
+                                <RepeatButton Style="{StaticResource ScrollBar_PageButton}" />
+                            </Track.IncreaseRepeatButton>
+                        </Track>
+
+                        <RepeatButton
+                            Grid.Row="2"
+                            Command="ScrollBar.LineDownCommand"
+                            Content="M 0 0 L 6 10 L 12 0 Z"
+                            Style="{DynamicResource ScrollBar_LineButton}" />
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+
+    </Style>
+
+    <Style x:Key="Btn_Button" TargetType="Button">
+        <Setter Property="OverridesDefaultStyle" Value="True" />
+        <Setter Property="Cursor" Value="Hand" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border
+                        Name="border"
+                        Background="{TemplateBinding Background}"
+                        BorderBrush="Black"
+                        BorderThickness="0">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Opacity" Value="0.8" />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>

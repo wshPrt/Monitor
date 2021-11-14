@@ -1,0 +1,513 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AbnormalLocation" xml:space="preserve">
+    <value>异常位置</value>
+  </data>
+  <data name="AbnormalWarning" xml:space="preserve">
+    <value>BC3异常告警!</value>
+  </data>
+  <data name="Accelerate" xml:space="preserve">
+    <value>加速</value>
+  </data>
+  <data name="Account" xml:space="preserve">
+    <value>账号</value>
+  </data>
+  <data name="AddDevice" xml:space="preserve">
+    <value>添加设备</value>
+  </data>
+  <data name="AddItem" xml:space="preserve">
+    <value>添加项目</value>
+  </data>
+  <data name="AlarmToRemind" xml:space="preserve">
+    <value>报警提醒</value>
+  </data>
+  <data name="AutonomyLearning" xml:space="preserve">
+    <value>自主学习</value>
+  </data>
+  <data name="AutonomyLearningCompleted" xml:space="preserve">
+    <value>自主学习已完成</value>
+  </data>
+  <data name="A_CoalMine" xml:space="preserve">
+    <value>A 煤矿</value>
+  </data>
+  <data name="BeingLearning" xml:space="preserve">
+    <value>正在学习中....</value>
+  </data>
+  <data name="BeltDamageGrade" xml:space="preserve">
+    <value>皮带损伤等级</value>
+  </data>
+  <data name="BeltPosition" xml:space="preserve">
+    <value>皮带位置</value>
+  </data>
+  <data name="BeltSpeed" xml:space="preserve">
+    <value>皮带速度</value>
+  </data>
+  <data name="B_CoalMine" xml:space="preserve">
+    <value>B 煤矿</value>
+  </data>
+  <data name="Camera" xml:space="preserve">
+    <value>相机</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="Chroma" xml:space="preserve">
+    <value>色度</value>
+  </data>
+  <data name="Chrominance" xml:space="preserve">
+    <value>色度</value>
+  </data>
+  <data name="CleanCoverSpeedAdjustment" xml:space="preserve">
+    <value>清洁罩转速调节</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>关闭</value>
+  </data>
+  <data name="CloseTag" xml:space="preserve">
+    <value>关</value>
+  </data>
+  <data name="Confirm" xml:space="preserve">
+    <value>确认</value>
+  </data>
+  <data name="Contrast" xml:space="preserve">
+    <value>对比度</value>
+  </data>
+  <data name="ControlBox" xml:space="preserve">
+    <value>控制箱</value>
+  </data>
+  <data name="ConveyorChoice" xml:space="preserve">
+    <value>输送机选择</value>
+  </data>
+  <data name="CPUTemperature" xml:space="preserve">
+    <value>CPU 温度</value>
+  </data>
+  <data name="CurrentChoice" xml:space="preserve">
+    <value>当前选择</value>
+  </data>
+  <data name="CurrentLineOne" xml:space="preserve">
+    <value>当前线路1</value>
+  </data>
+  <data name="CurrentMonitoringPoint" xml:space="preserve">
+    <value>当前监测测点</value>
+  </data>
+  <data name="Decelerate" xml:space="preserve">
+    <value>减速</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>删除</value>
+  </data>
+  <data name="delProject" xml:space="preserve">
+    <value>确定删除当前项目?</value>
+  </data>
+  <data name="DepartmentName" xml:space="preserve">
+    <value>部门名称</value>
+  </data>
+  <data name="DetermineDeleteCurrentEquipment" xml:space="preserve">
+    <value>确定删除当前设备?</value>
+  </data>
+  <data name="DeviceManage" xml:space="preserve">
+    <value>设备管理</value>
+  </data>
+  <data name="DeviceName" xml:space="preserve">
+    <value>设备名称：</value>
+  </data>
+  <data name="DeviceNumber" xml:space="preserve">
+    <value>设备编号:</value>
+  </data>
+  <data name="DeviceRunning" xml:space="preserve">
+    <value>设备运行</value>
+  </data>
+  <data name="DeviceStatus" xml:space="preserve">
+    <value>设备状态</value>
+  </data>
+  <data name="Device_Name" xml:space="preserve">
+    <value>设备名称</value>
+  </data>
+  <data name="DisplayCoordinate" xml:space="preserve">
+    <value>显示坐标</value>
+  </data>
+  <data name="DustCoverSpeedAdjustment" xml:space="preserve">
+    <value>防尘罩转速调节</value>
+  </data>
+  <data name="EmergencyStop" xml:space="preserve">
+    <value>急停</value>
+  </data>
+  <data name="EnableNow" xml:space="preserve">
+    <value>立即启用：</value>
+  </data>
+  <data name="Enable_Now" xml:space="preserve">
+    <value>立即启用</value>
+  </data>
+  <data name="EndTime" xml:space="preserve">
+    <value>结束时间</value>
+  </data>
+  <data name="ExceptionRecord" xml:space="preserve">
+    <value>异常记录</value>
+  </data>
+  <data name="ExitSystem" xml:space="preserve">
+    <value>退出系统</value>
+  </data>
+  <data name="Filter" xml:space="preserve">
+    <value>筛选</value>
+  </data>
+  <data name="FlipBack" xml:space="preserve">
+    <value>向后翻阅</value>
+  </data>
+  <data name="FlipForward" xml:space="preserve">
+    <value>向前翻阅</value>
+  </data>
+  <data name="GraphicsCardTemperature" xml:space="preserve">
+    <value>显卡温度</value>
+  </data>
+  <data name="HandSpray" xml:space="preserve">
+    <value>手动喷淋</value>
+  </data>
+  <data name="HideCoordinate" xml:space="preserve">
+    <value>隐藏坐标</value>
+  </data>
+  <data name="HistoricalEvents" xml:space="preserve">
+    <value>历史事件</value>
+  </data>
+  <data name="ImageManipulation" xml:space="preserve">
+    <value>图像操作</value>
+  </data>
+  <data name="IpAddress" xml:space="preserve">
+    <value>IP地址:</value>
+  </data>
+  <data name="IP_Address" xml:space="preserve">
+    <value>IP地址</value>
+  </data>
+  <data name="IsNotEnable" xml:space="preserve">
+    <value>是否启用</value>
+  </data>
+  <data name="Learning" xml:space="preserve">
+    <value>自主学习</value>
+  </data>
+  <data name="LightBrightness" xml:space="preserve">
+    <value>灯光亮度</value>
+  </data>
+  <data name="LineNumber" xml:space="preserve">
+    <value>线路编号</value>
+  </data>
+  <data name="LineSelect" xml:space="preserve">
+    <value>线路选择：</value>
+  </data>
+  <data name="Line_1" xml:space="preserve">
+    <value>线路1</value>
+  </data>
+  <data name="Line_Number" xml:space="preserve">
+    <value>线路编号：</value>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>登录</value>
+  </data>
+  <data name="LongitudinalMonitorManagementSystem" xml:space="preserve">
+    <value>纵撕监测管理系统V0.0.1</value>
+  </data>
+  <data name="LongitudinalTearingMonitoring" xml:space="preserve">
+    <value>纵撕监测管理系统</value>
+  </data>
+  <data name="Luminance" xml:space="preserve">
+    <value>亮度</value>
+  </data>
+  <data name="Magnifier" xml:space="preserve">
+    <value>放大镜</value>
+  </data>
+  <data name="MarkOldWound" xml:space="preserve">
+    <value>标记为旧伤</value>
+  </data>
+  <data name="Maximize" xml:space="preserve">
+    <value>最大化</value>
+  </data>
+  <data name="Minimize" xml:space="preserve">
+    <value>最小化</value>
+  </data>
+  <data name="Modify" xml:space="preserve">
+    <value>修改</value>
+  </data>
+  <data name="ModifyDevice" xml:space="preserve">
+    <value>修改设备</value>
+  </data>
+  <data name="ModifyItem" xml:space="preserve">
+    <value>修改项目</value>
+  </data>
+  <data name="MonitorManage" xml:space="preserve">
+    <value>监测管理</value>
+  </data>
+  <data name="NewEquipment" xml:space="preserve">
+    <value>新增设备</value>
+  </data>
+  <data name="NewItem" xml:space="preserve">
+    <value>新增项目</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>否</value>
+  </data>
+  <data name="Number" xml:space="preserve">
+    <value>编号</value>
+  </data>
+  <data name="OneSignVertex" xml:space="preserve">
+    <value>1号点</value>
+  </data>
+  <data name="Open" xml:space="preserve">
+    <value>开</value>
+  </data>
+  <data name="Operate" xml:space="preserve">
+    <value>操作</value>
+  </data>
+  <data name="OwnedLine" xml:space="preserve">
+    <value>所属线路</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>密码</value>
+  </data>
+  <data name="PitchAngle" xml:space="preserve">
+    <value>俯仰角度</value>
+  </data>
+  <data name="Plant" xml:space="preserve">
+    <value>xxx厂</value>
+  </data>
+  <data name="PleaseEnterDeviceName" xml:space="preserve">
+    <value>请输入设备名称</value>
+  </data>
+  <data name="PleaseEnterDeviceNumber" xml:space="preserve">
+    <value>请输入设备编号</value>
+  </data>
+  <data name="PleaseEnterIPAddress" xml:space="preserve">
+    <value>请输入IP地址</value>
+  </data>
+  <data name="PleaseEnterLineNumber" xml:space="preserve">
+    <value>请输入线路编号</value>
+  </data>
+  <data name="PleaseEnterPort" xml:space="preserve">
+    <value>请输入端口</value>
+  </data>
+  <data name="PleaseEnterProjectName" xml:space="preserve">
+    <value>请输入项目名称</value>
+  </data>
+  <data name="PleaseEnterUserName" xml:space="preserve">
+    <value>请输入用户名称</value>
+  </data>
+  <data name="PleaseEnterUserPassword" xml:space="preserve">
+    <value>请输入用户密码</value>
+  </data>
+  <data name="PleaseEnterUserPasswordAgain" xml:space="preserve">
+    <value>请再次输入用户密码</value>
+  </data>
+  <data name="PointOne" xml:space="preserve">
+    <value>1号点</value>
+  </data>
+  <data name="PointThere" xml:space="preserve">
+    <value>3号点</value>
+  </data>
+  <data name="PointTwo" xml:space="preserve">
+    <value>2号点</value>
+  </data>
+  <data name="Port" xml:space="preserve">
+    <value>端口</value>
+  </data>
+  <data name="PortNumber" xml:space="preserve">
+    <value>端口号：</value>
+  </data>
+  <data name="PressEsc" xml:space="preserve">
+    <value>按Esc退出放大镜</value>
+  </data>
+  <data name="ProjectName" xml:space="preserve">
+    <value>项目名称</value>
+  </data>
+  <data name="Project_Name" xml:space="preserve">
+    <value>项目名称：</value>
+  </data>
+  <data name="Revise" xml:space="preserve">
+    <value>修改</value>
+  </data>
+  <data name="Saturation" xml:space="preserve">
+    <value>饱和度</value>
+  </data>
+  <data name="SaveSettings" xml:space="preserve">
+    <value>保存设置</value>
+  </data>
+  <data name="SelectAll" xml:space="preserve">
+    <value>全选</value>
+  </data>
+  <data name="SerialNumber" xml:space="preserve">
+    <value>序号</value>
+  </data>
+  <data name="Settings" xml:space="preserve">
+    <value>系统设置</value>
+  </data>
+  <data name="SlightlyDamaged" xml:space="preserve">
+    <value>轻微破损</value>
+  </data>
+  <data name="SpeedRegulation" xml:space="preserve">
+    <value>转速调节</value>
+  </data>
+  <data name="SprayWash" xml:space="preserve">
+    <value>喷淋冲洗</value>
+  </data>
+  <data name="StartLearning" xml:space="preserve">
+    <value>开始学习</value>
+  </data>
+  <data name="StartTime" xml:space="preserve">
+    <value>开始时间</value>
+  </data>
+  <data name="StudyAgain" xml:space="preserve">
+    <value>重新学习</value>
+  </data>
+  <data name="SystemAdministrator" xml:space="preserve">
+    <value>系统管理员</value>
+  </data>
+  <data name="SystemDate" xml:space="preserve">
+    <value>1天7小时55分36秒</value>
+  </data>
+  <data name="SystemRunning" xml:space="preserve">
+    <value>系统已运行</value>
+  </data>
+  <data name="Time" xml:space="preserve">
+    <value>时间</value>
+  </data>
+  <data name="TurnSpeed" xml:space="preserve">
+    <value>当前转速</value>
+  </data>
+  <data name="UserModify" xml:space="preserve">
+    <value>用户修改</value>
+  </data>
+  <data name="UserName" xml:space="preserve">
+    <value>用户名称</value>
+  </data>
+  <data name="UserRight" xml:space="preserve">
+    <value>用户权限</value>
+  </data>
+  <data name="VideoPreview" xml:space="preserve">
+    <value>视频预览</value>
+  </data>
+  <data name="ViewControl" xml:space="preserve">
+    <value>视图控制</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>是</value>
+  </data>
+  <data name="ZoomIn" xml:space="preserve">
+    <value>放大</value>
+  </data>
+  <data name="ZoomOut" xml:space="preserve">
+    <value>缩小</value>
+  </data>
+</root>

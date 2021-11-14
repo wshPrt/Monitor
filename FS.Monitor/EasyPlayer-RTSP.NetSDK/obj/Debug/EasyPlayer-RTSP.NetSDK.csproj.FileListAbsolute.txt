@@ -1,0 +1,11 @@
+D:\vsCode\FS.Monitor\EasyPlayer-RTSP.NetSDK\bin\Debug\EasyPlayer-RTSP.NetSDK.dll
+D:\vsCode\FS.Monitor\EasyPlayer-RTSP.NetSDK\bin\Debug\EasyPlayer-RTSP.NetSDK.pdb
+D:\vsCode\FS.Monitor\EasyPlayer-RTSP.NetSDK\obj\Debug\EasyPlayer-RTSP.NetSDK.csproj.CoreCompileInputs.cache
+D:\vsCode\FS.Monitor\EasyPlayer-RTSP.NetSDK\obj\Debug\EasyPlayer-RTSP.NetSDK.dll
+D:\vsCode\FS.Monitor\EasyPlayer-RTSP.NetSDK\obj\Debug\EasyPlayer-RTSP.NetSDK.pdb
+E:\work\work\FS\FS.Monitor_20210813\FS.Monitor\EasyPlayer-RTSP.NetSDK\bin\Debug\EasyPlayer-RTSP.NetSDK.dll
+E:\work\work\FS\FS.Monitor_20210813\FS.Monitor\EasyPlayer-RTSP.NetSDK\bin\Debug\EasyPlayer-RTSP.NetSDK.pdb
+E:\work\work\FS\FS.Monitor_20210813\FS.Monitor\EasyPlayer-RTSP.NetSDK\obj\Debug\EasyPlayer-RTSP.NetSDK.csproj.AssemblyReference.cache
+E:\work\work\FS\FS.Monitor_20210813\FS.Monitor\EasyPlayer-RTSP.NetSDK\obj\Debug\EasyPlayer-RTSP.NetSDK.csproj.CoreCompileInputs.cache
+E:\work\work\FS\FS.Monitor_20210813\FS.Monitor\EasyPlayer-RTSP.NetSDK\obj\Debug\EasyPlayer-RTSP.NetSDK.dll
+E:\work\work\FS\FS.Monitor_20210813\FS.Monitor\EasyPlayer-RTSP.NetSDK\obj\Debug\EasyPlayer-RTSP.NetSDK.pdb

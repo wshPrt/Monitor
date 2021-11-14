@@ -1,2 +1,15 @@
 # Monitor
 防撕裂系统
+![1](https://user-images.githubusercontent.com/31254644/141682356-40b78c76-aa9f-4681-801f-56c2bd81ae8e.png)
+![2](https://user-images.githubusercontent.com/31254644/141682364-1d8a5815-1e93-4c71-b0bc-0b293a9c9cc4.png)
+![3](https://user-images.githubusercontent.com/31254644/141682366-04364ef0-73f9-485e-bc93-f0600e9a4b5f.png)
+![4](https://user-images.githubusercontent.com/31254644/141682370-60ef858d-ab4b-4bd7-868b-44ded02da772.png)
+![5](https://user-images.githubusercontent.com/31254644/141682372-906bcbc3-507f-41be-a218-b96220e02e72.png)
+![6](https://user-images.githubusercontent.com/31254644/141682373-a45312f3-4a67-4a84-933e-28f4813fe24d.png)
+![7](https://user-images.githubusercontent.com/31254644/141682376-60eab86c-6b76-44c1-be3b-4c9ce962f2b0.png)
+![8](https://user-images.githubusercontent.com/31254644/141682377-ed8af667-0e5b-4686-9bb0-ba8542058240.png)
+![9](https://user-images.githubusercontent.com/31254644/141682379-c563eb93-86b8-4c3a-9984-0ae26fcf099b.png)
+![10](https://user-images.githubusercontent.com/31254644/141682381-81d92878-5b30-488c-b32c-2c885841d53f.png)
+![11](https://user-images.githubusercontent.com/31254644/141682383-ca60811c-6cc4-458c-85f2-8086876c5ee6.png)
+![12](https://user-images.githubusercontent.com/31254644/141682385-eef20e28-00c3-46f1-b47b-6632ee4bcf8c.png)
+![13](https://user-images.githubusercontent.com/31254644/141682386-27500c35-2bf0-4e09-a918-f03c9e414861.png)
